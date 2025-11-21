@@ -67,12 +67,8 @@ git clone https://github.com/akjaineverlign/Fleet_monitoring.git
 cd Fleet_monitoring
 ```
 
-2. Install dependencies (recommended: pnpm):
+2. Install dependencies :
 
-```bash
-npm install -f   # if you don't have pnpm installed
-pnpm install
-```
 
 If you prefer npm or don't want to install pnpm:
 
