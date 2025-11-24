@@ -1,0 +1,500 @@
+{
+  "craft": [
+    {
+      "id": "CCM-851",
+      "name": "Combatant Craft Medium",
+      "modelName": "CCM",
+      "status": "READY",
+      "color": "ready",
+      "craftOverview": {
+        "status": "Operational",
+        "base": "NSW Base-1",
+        "engineHours": 812.5,
+        "missionsCompleted": 122,
+        "lastMaintenance": "2025-07-10",
+        "nextMaintenanceDue": "2025-11-20",
+        "systemVersion": "v3.8.1"
+      },
+      "overallHealth": { "percentage": 92 },
+      "propulsionLoadTrend": [
+        { "time": "6d", "load": 68 }, { "time": "5d", "load": 65 },
+        { "time": "4d", "load": 70 }, { "time": "3d", "load": 72 },
+        { "time": "2d", "load": 73 }, { "time": "1d", "load": 74 },
+        { "time": "0d", "load": 72 }
+      ],
+      "faultTrends": [
+        { "name": "Port Engine", "percentage": 90 },
+        { "name": "Electrical Bus", "percentage": 91 }
+      ],
+      "recentAlerts": [],
+      "predictiveInsights": {
+        "estimatedRemainingServiceLife": "82%",
+        "predictedNextFaultType": "None"
+      }
+    },
+
+    {
+      "id": "CCM-867",
+      "name": "Combatant Craft Medium",
+      "modelName": "CCM",
+      "status": "AT-RISK",
+      "color": "warning",
+      "craftOverview": {
+        "status": "At Risk",
+        "base": "NSW Base-2",
+        "engineHours": 943.2,
+        "missionsCompleted": 147,
+        "lastMaintenance": "2025-06-20",
+        "nextMaintenanceDue": "2025-10-28",
+        "systemVersion": "v3.9.2"
+      },
+      "overallHealth": { "percentage": 62 },
+      "propulsionLoadTrend": [
+        { "time": "6d", "load": 72 }, { "time": "5d", "load": 75 },
+        { "time": "4d", "load": 76 }, { "time": "3d", "load": 78 },
+        { "time": "2d", "load": 80 }, { "time": "1d", "load": 81 },
+        { "time": "0d", "load": 83 }
+      ],
+      "faultTrends": [
+        { "name": "Port Engine", "percentage": 40 },
+        { "name": "Hydraulics", "percentage": 35 }
+      ],
+      "recentAlerts": [
+        { "level": "Medium", "message": "Hydraulic pressure fluctuation detected" }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingServiceLife": "41%",
+        "predictedNextFaultType": "Hydraulics"
+      }
+    },
+
+    {
+      "id": "CCA-432",
+      "name": "Combatant Craft Assault",
+      "modelName": "CCA",
+      "status": "CRITICAL",
+      "color": "critical",
+      "craftOverview": {
+        "status": "Critical",
+        "base": "NSW Base-3",
+        "engineHours": 1021,
+        "missionsCompleted": 163,
+        "lastMaintenance": "2025-09-20",
+        "nextMaintenanceDue": "2025-11-15",
+        "systemVersion": "v4.1.2"
+      },
+      "overallHealth": { "percentage": 18 },
+      "propulsionLoadTrend": [
+        { "time": "6d", "load": 88 }, { "time": "5d", "load": 90 },
+        { "time": "4d", "load": 93 }, { "time": "3d", "load": 95 },
+        { "time": "2d", "load": 97 }, { "time": "1d", "load": 98 },
+        { "time": "0d", "load": 99 }
+      ],
+      "faultTrends": [
+        { "name": "Port Engine", "percentage": 22 },
+        { "name": "Electrical Bus", "percentage": 14 }
+      ],
+      "recentAlerts": [
+        { "level": "High", "message": "Severe engine vibration detected" },
+        { "level": "High", "message": "Electrical bus instability" }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingServiceLife": "6%",
+        "predictedNextFaultType": "Engine Failure"
+      }
+    },
+
+    {
+      "id": "CCA-448",
+      "name": "Combatant Craft Assault",
+      "modelName": "CCA",
+      "status": "READY",
+      "color": "ready",
+      "craftOverview": {
+        "status": "Operational",
+        "base": "NSW Base-1",
+        "engineHours": 622,
+        "missionsCompleted": 89,
+        "lastMaintenance": "2025-07-02",
+        "nextMaintenanceDue": "2025-11-05",
+        "systemVersion": "v4.0.0"
+      },
+      "overallHealth": { "percentage": 95 },
+      "propulsionLoadTrend": [
+        { "time": "6d", "load": 61 }, { "time": "5d", "load": 62 },
+        { "time": "4d", "load": 64 }, { "time": "3d", "load": 63 },
+        { "time": "2d", "load": 65 }, { "time": "1d", "load": 66 },
+        { "time": "0d", "load": 65 }
+      ],
+      "faultTrends": [],
+      "recentAlerts": [],
+      "predictiveInsights": {
+        "estimatedRemainingServiceLife": "89%"
+      }
+    },
+
+    {
+      "id": "CCH-901",
+      "name": "Combatant Craft Heavy",
+      "modelName": "CCH",
+      "status": "READY",
+      "color": "ready",
+      "craftOverview": {
+        "status": "Operational",
+        "base": "NSW Heavy Ops Base",
+        "engineHours": 1543,
+        "missionsCompleted": 310,
+        "lastMaintenance": "2025-08-11",
+        "nextMaintenanceDue": "2025-11-30",
+        "systemVersion": "v5.2.1"
+      },
+      "overallHealth": { "percentage": 88 },
+      "propulsionLoadTrend": [
+        { "time": "6d", "load": 49 }, { "time": "5d", "load": 50 },
+        { "time": "4d", "load": 52 }, { "time": "3d", "load": 54 },
+        { "time": "2d", "load": 53 }, { "time": "1d", "load": 55 },
+        { "time": "0d", "load": 54 }
+      ],
+      "faultTrends": [],
+      "recentAlerts": [],
+      "predictiveInsights": { "estimatedRemainingServiceLife": "78%" }
+    },
+
+    {
+      "id": "CCH-902",
+      "name": "Combatant Craft Heavy",
+      "modelName": "CCH",
+      "status": "DEPOT",
+      "color": "depot",
+      "craftOverview": {
+        "status": "Depot Maintenance",
+        "base": "Naval Depot-4",
+        "engineHours": 1820,
+        "missionsCompleted": 355,
+        "lastMaintenance": "2025-03-18",
+        "nextMaintenanceDue": "2026-01-15",
+        "systemVersion": "v5.1.7"
+      },
+      "overallHealth": { "percentage": 44 },
+      "propulsionLoadTrend": [],
+      "faultTrends": [
+        { "name": "Hull Vibration", "percentage": 22 }
+      ],
+      "recentAlerts": [
+        { "level": "High", "message": "Hull structural stress exceeding threshold" }
+      ],
+      "predictiveInsights": { "estimatedRemainingServiceLife": "22%" }
+    },
+
+    {
+      "id": "SOC-R-131",
+      "name": "Special Operations Craft – Riverine",
+      "modelName": "SOC-R",
+      "status": "READY",
+      "color": "ready",
+      "craftOverview": {
+        "status": "Operational",
+        "base": "Riverine Base-1",
+        "engineHours": 542,
+        "missionsCompleted": 96,
+        "lastMaintenance": "2025-08-15",
+        "nextMaintenanceDue": "2025-12-01",
+        "systemVersion": "v3.9.0"
+      },
+      "overallHealth": { "percentage": 88 },
+      "propulsionLoadTrend": [
+        { "time": "6d", "load": 54 }, { "time": "5d", "load": 56 },
+        { "time": "4d", "load": 58 }, { "time": "3d", "load": 59 },
+        { "time": "2d", "load": 61 }, { "time": "1d", "load": 60 },
+        { "time": "0d", "load": 59 }
+      ],
+      "faultTrends": [],
+      "recentAlerts": [],
+      "predictiveInsights": { "estimatedRemainingServiceLife": "74%" }
+    },
+
+    {
+      "id": "SOC-R-145",
+      "name": "Special Operations Craft – Riverine",
+      "modelName": "SOC-R",
+      "status": "FIELD-MAINT",
+      "color": "warning",
+      "craftOverview": {
+        "status": "Field Maintenance",
+        "base": "Riverine Base-2",
+        "engineHours": 632,
+        "missionsCompleted": 117,
+        "lastMaintenance": "2025-09-12",
+        "nextMaintenanceDue": "2025-10-20",
+        "systemVersion": "v4.0.4"
+      },
+      "overallHealth": { "percentage": 65 },
+      "propulsionLoadTrend": [
+        { "time": "6d", "load": 60 }, { "time": "5d", "load": 62 },
+        { "time": "4d", "load": 63 }, { "time": "3d", "load": 65 },
+        { "time": "2d", "load": 67 }, { "time": "1d", "load": 71 },
+        { "time": "0d", "load": 74 }
+      ],
+      "faultTrends": [],
+      "recentAlerts": [
+        { "level": "Medium", "message": "Fuel delivery pressure fluctuations" }
+      ],
+      "predictiveInsights": { "estimatedRemainingServiceLife": "49%" }
+    },
+
+    {
+      "id": "RHIB-1107",
+      "name": "11m Rigid Hull Inflatable Boat",
+      "modelName": "RHIB-11M",
+      "status": "READY",
+      "color": "ready",
+      "craftOverview": {
+        "status": "Operational",
+        "base": "NSW Base-5",
+        "engineHours": 410,
+        "missionsCompleted": 72,
+        "lastMaintenance": "2025-07-30",
+        "nextMaintenanceDue": "2025-10-29",
+        "systemVersion": "v2.4.8"
+      },
+      "overallHealth": { "percentage": 91 },
+      "propulsionLoadTrend": [
+        { "time": "6d", "load": 48 }, { "time": "5d", "load": 49 },
+        { "time": "4d", "load": 50 }, { "time": "3d", "load": 49 },
+        { "time": "2d", "load": 51 }, { "time": "1d", "load": 52 },
+        { "time": "0d", "load": 53 }
+      ],
+      "faultTrends": [],
+      "recentAlerts": [],
+      "predictiveInsights": { "estimatedRemainingServiceLife": "83%" }
+    },
+
+    {
+      "id": "RHIB-1109",
+      "name": "11m Rigid Hull Inflatable Boat",
+      "modelName": "RHIB-11M",
+      "status": "AT-RISK",
+      "color": "warning",
+      "craftOverview": {
+        "status": "At Risk",
+        "base": "NSW Base-5",
+        "engineHours": 530,
+        "missionsCompleted": 90,
+        "lastMaintenance": "2025-06-25",
+        "nextMaintenanceDue": "2025-10-11",
+        "systemVersion": "v2.4.7"
+      },
+      "overallHealth": { "percentage": 59 },
+      "propulsionLoadTrend": [
+        { "time": "6d", "load": 65 }, { "time": "5d", "load": 67 },
+        { "time": "4d", "load": 69 }, { "time": "3d", "load": 71 },
+        { "time": "2d", "load": 72 }, { "time": "1d", "load": 75 },
+        { "time": "0d", "load": 77 }
+      ],
+      "faultTrends": [
+        { "name": "Fuel System", "percentage": 40 }
+      ],
+      "recentAlerts": [
+        { "level": "Medium", "message": "Fuel mixture irregularity" }
+      ],
+      "predictiveInsights": { "estimatedRemainingServiceLife": "37%" }
+    },
+
+    {
+      "id": "MKV-201",
+      "name": "MK V Special Operations Craft",
+      "modelName": "MK-V",
+      "status": "READY",
+      "color": "ready",
+      "craftOverview": {
+        "status": "Operational",
+        "base": "NSW Legacy Craft Facility",
+        "engineHours": 1670,
+        "missionsCompleted": 412,
+        "lastMaintenance": "2025-08-18",
+        "nextMaintenanceDue": "2025-12-10",
+        "systemVersion": "v5.9.2"
+      },
+      "overallHealth": { "percentage": 87 },
+      "faultTrends": [],
+      "recentAlerts": [],
+      "predictiveInsights": { "estimatedRemainingServiceLife": "72%" }
+    },
+
+    {
+      "id": "MKV-207",
+      "name": "MK V Special Operations Craft",
+      "modelName": "MK-V",
+      "status": "AT-RISK",
+      "color": "warning",
+      "craftOverview": {
+        "status": "At Risk",
+        "base": "NSW Legacy Craft Facility",
+        "engineHours": 1810,
+        "missionsCompleted": 433,
+        "lastMaintenance": "2025-07-12",
+        "nextMaintenanceDue": "2025-10-22",
+        "systemVersion": "v5.8.7"
+      },
+      "overallHealth": { "percentage": 58 },
+      "recentAlerts": [
+        { "level": "Medium", "message": "Port engine torque deviation" }
+      ]
+    },
+
+    {
+      "id": "PB-90-101",
+      "name": "Patrol Boat PB-90",
+      "modelName": "PB-90",
+      "status": "READY",
+      "color": "ready",
+      "craftOverview": {
+        "status": "Operational",
+        "base": "Coastal Patrol Station-1",
+        "engineHours": 770,
+        "missionsCompleted": 198,
+        "lastMaintenance": "2025-09-19",
+        "nextMaintenanceDue": "2025-12-20",
+        "systemVersion": "v3.2.4"
+      },
+      "overallHealth": { "percentage": 90 },
+      "predictiveInsights": { "estimatedRemainingServiceLife": "81%" }
+    },
+
+    {
+      "id": "PB-90-114",
+      "name": "Patrol Boat PB-90",
+      "modelName": "PB-90",
+      "status": "AT-RISK",
+      "color": "warning",
+      "craftOverview": {
+        "status": "At Risk",
+        "base": "Coastal Patrol Station-1",
+        "engineHours": 842,
+        "missionsCompleted": 211,
+        "lastMaintenance": "2025-06-14",
+        "nextMaintenanceDue": "2025-09-30",
+        "systemVersion": "v3.2.1"
+      },
+      "overallHealth": { "percentage": 61 },
+      "recentAlerts": [
+        { "level": "Medium", "message": "Navigation drift under heavy sea state" }
+      ]
+    },
+
+    {
+      "id": "INT-FAST-01",
+      "name": "High-Speed Interceptor",
+      "modelName": "Interceptor",
+      "status": "READY",
+      "color": "ready",
+      "craftOverview": {
+        "status": "Operational",
+        "base": "Fast Response Facility-2",
+        "engineHours": 310,
+        "missionsCompleted": 54,
+        "lastMaintenance": "2025-08-10",
+        "nextMaintenanceDue": "2025-11-10",
+        "systemVersion": "v1.8.2"
+      },
+      "overallHealth": { "percentage": 93 }
+    },
+
+    {
+      "id": "INT-FAST-02",
+      "name": "High-Speed Interceptor",
+      "modelName": "Interceptor",
+      "status": "AT-RISK",
+      "color": "warning",
+      "craftOverview": {
+        "status": "At Risk",
+        "base": "Fast Response Facility-2",
+        "engineHours": 445,
+        "missionsCompleted": 78,
+        "lastMaintenance": "2025-07-01",
+        "nextMaintenanceDue": "2025-09-22",
+        "systemVersion": "v1.8.0"
+      },
+      "overallHealth": { "percentage": 66 },
+      "recentAlerts": [
+        { "level": "Medium", "message": "Propulsion cavitation detected at high speeds" }
+      ]
+    },
+
+    {
+      "id": "SUP-201",
+      "name": "Support Craft Type-A",
+      "modelName": "Support-A",
+      "status": "READY",
+      "color": "ready",
+      "craftOverview": {
+        "status": "Operational",
+        "base": "Logistics Base-1",
+        "engineHours": 510,
+        "missionsCompleted": 140,
+        "lastMaintenance": "2025-09-01",
+        "nextMaintenanceDue": "2025-11-28",
+        "systemVersion": "v2.1.4"
+      },
+      "overallHealth": { "percentage": 89 }
+    },
+
+    {
+      "id": "SUP-214",
+      "name": "Support Craft Type-A",
+      "modelName": "Support-A",
+      "status": "FIELD-MAINT",
+      "color": "warning",
+      "craftOverview": {
+        "status": "Field Maintenance",
+        "base": "Logistics Base-1",
+        "engineHours": 630,
+        "missionsCompleted": 170,
+        "lastMaintenance": "2025-08-12",
+        "nextMaintenanceDue": "2025-10-19",
+        "systemVersion": "v2.1.0"
+      },
+      "overallHealth": { "percentage": 57 }
+    },
+
+    {
+      "id": "PB-95-220",
+      "name": "Patrol Boat PB-95",
+      "modelName": "PB-95",
+      "status": "READY",
+      "color": "ready",
+      "craftOverview": {
+        "status": "Operational",
+        "base": "Coastal Station-3",
+        "engineHours": 690,
+        "missionsCompleted": 175,
+        "lastMaintenance": "2025-08-15",
+        "nextMaintenanceDue": "2025-12-01",
+        "systemVersion": "v3.0.3"
+      },
+      "overallHealth": { "percentage": 86 }
+    },
+
+    {
+      "id": "PB-95-231",
+      "name": "Patrol Boat PB-95",
+      "modelName": "PB-95",
+      "status": "CRITICAL",
+      "color": "critical",
+      "craftOverview": {
+        "status": "Critical",
+        "base": "Coastal Station-3",
+        "engineHours": 812,
+        "missionsCompleted": 203,
+        "lastMaintenance": "2025-06-02",
+        "nextMaintenanceDue": "2025-07-20",
+        "systemVersion": "v2.9.9"
+      },
+      "overallHealth": { "percentage": 21 },
+      "recentAlerts": [
+        { "level": "High", "message": "Severe hull vibration detected" },
+        { "level": "High", "message": "Electrical grounding issue suspected" }
+      ]
+    }
+  ]
+}
