@@ -1,0 +1,1504 @@
+{
+  "drones": [
+    {
+      "id": "12-7554",
+      "name": "RQ-4 Global Hawk",
+      "modelName": "RQ-4 Global Hawk",
+      "status": "READY",
+      "color": "ready",
+      "lastUpdated": "12:45:32 UTC",
+      "droneOverview": {
+        "status": "Operational",
+        "base": "Base-1",
+        "battery": 93,
+        "flightHours": 120.5,
+        "missionsCompleted": 34,
+        "lastMaintenance": "2025-07-10",
+        "nextMaintenanceDue": "2025-11-20",
+        "firmwareVersion": "v4.3.1"
+      },
+      "overallHealth": {
+        "percentage": 93,
+        "score": 93,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "18%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 88, "voltage": 12.1 },
+        { "time": "5d", "battery": 89, "voltage": 12.2 },
+        { "time": "4d", "battery": 90, "voltage": 12.15 },
+        { "time": "3d", "battery": 91, "voltage": 12.3 },
+        { "time": "2d", "battery": 92, "voltage": 12.25 },
+        { "time": "1d", "battery": 95, "voltage": 12.8 },
+        { "time": "0d", "battery": 93, "voltage": 13.02 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 85 },
+        { "name": "Motor 2", "percentage": 90 },
+        { "name": "Motor 3", "percentage": 91 },
+        { "name": "GPS", "percentage": 92 },
+        { "name": "Sensors", "percentage": 95 },
+        { "name": "Comms", "percentage": 87 },
+        { "name": "AI", "percentage": 88 }
+      ],
+      "recentAlerts": [{ "level": "Medium", "message": "GPS signal loss at 40m altitude" }],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB001-0001",
+          "faultCode": "FP-PRP-002",
+          "component": "Propulsion System",
+          "failureMode": "Propeller vibration...",
+          "dateReported": "2025-10-09",
+          "technician": "ENG-SG-01",
+          "riskScore": "High",
+          "status": "Closed"
+        },
+        {
+          "caseId": "AFB001-0004",
+          "faultCode": "FE-ENG-004",
+          "component": "Motor / Drive Unit",
+          "failureMode": "Motor breakdown...",
+          "dateReported": "2025-09-22",
+          "technician": "ENG-SG-04",
+          "riskScore": "Critical",
+          "status": "In Progress"
+        },
+        {
+          "caseId": "AFB001-0007",
+          "faultCode": "FN-COM-008",
+          "component": "Communication Module",
+          "failureMode": "Communication uplink...",
+          "dateReported": "2025-09-30",
+          "technician": "COM-UNIT-04",
+          "riskScore": "High",
+          "status": "Open"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-12",
+          "duration": "45m",
+          "details": "Max Alt: 120m • Dist: 12km • Avg Speed: 18m/h"
+        },
+        {
+          "date": "2025-10-13",
+          "duration": "60m",
+          "details": "Max Alt: 130m • Dist: 15km • Avg Speed: 18m/h"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "93%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "12%"
+      }
+    },
+    {
+      "id": "09-7421",
+      "name": "MQ-9 Reaper",
+      "modelName": "MQ-9 Reaper",
+      "status": "CRITICAL",
+      "color": "critical",
+      "lastUpdated": "12:45:32 UTC",
+      "droneOverview": {
+        "status": "Critical",
+        "base": "Base-3",
+        "battery": 12,
+        "flightHours": 214.5,
+        "missionsCompleted": 58,
+        "lastMaintenance": "2025-09-20",
+        "nextMaintenanceDue": "2025-11-15",
+        "firmwareVersion": "v4.8.2"
+      },
+      "overallHealth": {
+        "percentage": 18,
+        "score": 18,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "18%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 78, "voltage": 11.8 },
+        { "time": "5d", "battery": 76, "voltage": 11.5 },
+        { "time": "4d", "battery": 75, "voltage": 11.4 },
+        { "time": "3d", "battery": 45, "voltage": 10.8 },
+        { "time": "2d", "battery": 25, "voltage": 9.5 },
+        { "time": "1d", "battery": 18, "voltage": 8.9 },
+        { "time": "0d", "battery": 12, "voltage": 8.2 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 21 },
+        { "name": "Motor 2", "percentage": 34 },
+        { "name": "Motor 3", "percentage": 11 },
+        { "name": "GPS", "percentage": 44 },
+        { "name": "Sensors", "percentage": 27 },
+        { "name": "Comms", "percentage": 65 },
+        { "name": "AI", "percentage": 55 }
+      ],
+      "recentAlerts": [
+        { "level": "High", "message": "Voltage fluctuation detected in Motor 1" },
+        { "level": "High", "message": "RPM drop below threshold in Motor 3" },
+        { "level": "Medium", "message": "GPS signal loss at 40m altitude" }
+      ],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB001-0001",
+          "faultCode": "FP-PRP-002",
+          "component": "Propulsion System",
+          "failureMode": "Propeller vibration...",
+          "dateReported": "2025-10-09",
+          "technician": "ENG-SG-01",
+          "riskScore": "High",
+          "status": "Closed"
+        },
+        {
+          "caseId": "AFB001-0004",
+          "faultCode": "FE-ENG-004",
+          "component": "Motor / Drive Unit",
+          "failureMode": "Motor breakdown...",
+          "dateReported": "2025-09-22",
+          "technician": "ENG-SG-04",
+          "riskScore": "Critical",
+          "status": "In Progress"
+        },
+        {
+          "caseId": "AFB001-0007",
+          "faultCode": "FN-COM-008",
+          "component": "Communication Module",
+          "failureMode": "Communication uplink...",
+          "dateReported": "2025-09-30",
+          "technician": "COM-UNIT-04",
+          "riskScore": "High",
+          "status": "Open"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-12",
+          "duration": "45m",
+          "details": "Max Alt: 120m • Dist: 12km • Avg Speed: 18m/h"
+        },
+        {
+          "date": "2025-10-13",
+          "duration": "60m",
+          "details": "Max Alt: 130m • Dist: 15km • Avg Speed: 18m/h"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "18%",
+        "predictedNextFaultType": "Motor Failure",
+        "confidenceScore": "82%"
+      }
+    },
+    {
+      "id": "12-7654",
+      "name": "RQ-4 Global Hawk",
+      "modelName": "RQ-4 Global Hawk",
+      "status": "READY",
+      "color": "ready",
+      "lastUpdated": "12:45:32 UTC",
+      "droneOverview": {
+        "status": "Ready",
+        "base": "Base-1",
+        "battery": 88,
+        "flightHours": 95.3,
+        "missionsCompleted": 42,
+        "lastMaintenance": "2025-08-15",
+        "nextMaintenanceDue": "2025-12-01",
+        "firmwareVersion": "v4.3.0"
+      },
+      "overallHealth": {
+        "percentage": 88,
+        "score": 88,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "22%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 82, "voltage": 11.9 },
+        { "time": "5d", "battery": 84, "voltage": 12.0 },
+        { "time": "4d", "battery": 85, "voltage": 12.1 },
+        { "time": "3d", "battery": 86, "voltage": 12.2 },
+        { "time": "2d", "battery": 87, "voltage": 12.3 },
+        { "time": "1d", "battery": 88, "voltage": 12.4 },
+        { "time": "0d", "battery": 88, "voltage": 12.4 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 12 },
+        { "name": "Motor 2", "percentage": 8 },
+        { "name": "Motor 3", "percentage": 6 },
+        { "name": "GPS", "percentage": 5 },
+        { "name": "Sensors", "percentage": 9 },
+        { "name": "Comms", "percentage": 4 },
+        { "name": "AI", "percentage": 7 }
+      ],
+      "recentAlerts": [],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB001-0001",
+          "faultCode": "FP-PRP-002",
+          "component": "Propulsion System",
+          "failureMode": "Propeller vibration...",
+          "dateReported": "2025-10-09",
+          "technician": "ENG-SG-01",
+          "riskScore": "High",
+          "status": "Closed"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-10",
+          "duration": "90m",
+          "details": "Max Alt: 250m • Dist: 45km • Avg Speed: 22m/h"
+        },
+        {
+          "date": "2025-10-11",
+          "duration": "75m",
+          "details": "Max Alt: 230m • Dist: 40km • Avg Speed: 20m/h"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "88%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "5%"
+      }
+    },
+    {
+      "id": "12-9833",
+      "name": "MQ-9 Reaper",
+      "modelName": "MQ-9 Reaper",
+      "status": "READY",
+      "color": "ready",
+      "lastUpdated": "12:30:15 UTC",
+      "droneOverview": {
+        "status": "Ready",
+        "base": "Base-2",
+        "battery": 91,
+        "flightHours": 156.8,
+        "missionsCompleted": 47,
+        "lastMaintenance": "2025-07-25",
+        "nextMaintenanceDue": "2025-11-25",
+        "firmwareVersion": "v4.8.1"
+      },
+      "overallHealth": {
+        "percentage": 91,
+        "score": 91,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "20%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 85, "voltage": 12.0 },
+        { "time": "5d", "battery": 87, "voltage": 12.1 },
+        { "time": "4d", "battery": 89, "voltage": 12.25 },
+        { "time": "3d", "battery": 90, "voltage": 12.3 },
+        { "time": "2d", "battery": 91, "voltage": 12.4 },
+        { "time": "1d", "battery": 92, "voltage": 12.45 },
+        { "time": "0d", "battery": 91, "voltage": 12.4 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 8 },
+        { "name": "Motor 2", "percentage": 5 },
+        { "name": "Motor 3", "percentage": 7 },
+        { "name": "GPS", "percentage": 4 },
+        { "name": "Sensors", "percentage": 6 },
+        { "name": "Comms", "percentage": 3 },
+        { "name": "AI", "percentage": 5 }
+      ],
+      "recentAlerts": [],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB002-0012",
+          "faultCode": "FE-SEN-015",
+          "component": "Sensor Array",
+          "failureMode": "Sensor calibration drift...",
+          "dateReported": "2025-08-05",
+          "technician": "ENG-SG-02",
+          "riskScore": "Medium",
+          "status": "Closed"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-11",
+          "duration": "120m",
+          "details": "Max Alt: 300m • Dist: 55km • Avg Speed: 25m/h"
+        },
+        {
+          "date": "2025-10-12",
+          "duration": "100m",
+          "details": "Max Alt: 280m • Dist: 50km • Avg Speed: 23m/h"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "91%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "8%"
+      }
+    },
+    {
+      "id": "12-9038",
+      "name": "MQ-1 Predator",
+      "modelName": "MQ-1 Predator",
+      "status": "READY",
+      "color": "ready",
+      "lastUpdated": "12:35:20 UTC",
+      "droneOverview": {
+        "status": "Ready",
+        "base": "Base-4",
+        "battery": 87,
+        "flightHours": 203.2,
+        "missionsCompleted": 51,
+        "lastMaintenance": "2025-06-30",
+        "nextMaintenanceDue": "2025-10-30",
+        "firmwareVersion": "v4.2.8"
+      },
+      "overallHealth": {
+        "percentage": 87,
+        "score": 87,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "19%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 80, "voltage": 11.8 },
+        { "time": "5d", "battery": 82, "voltage": 11.95 },
+        { "time": "4d", "battery": 84, "voltage": 12.1 },
+        { "time": "3d", "battery": 86, "voltage": 12.2 },
+        { "time": "2d", "battery": 87, "voltage": 12.3 },
+        { "time": "1d", "battery": 88, "voltage": 12.35 },
+        { "time": "0d", "battery": 87, "voltage": 12.3 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 14 },
+        { "name": "Motor 2", "percentage": 11 },
+        { "name": "Motor 3", "percentage": 9 },
+        { "name": "GPS", "percentage": 8 },
+        { "name": "Sensors", "percentage": 12 },
+        { "name": "Comms", "percentage": 7 },
+        { "name": "AI", "percentage": 10 }
+      ],
+      "recentAlerts": [{ "level": "Low", "message": "Routine maintenance scheduled" }],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB003-0008",
+          "faultCode": "FP-PRP-005",
+          "component": "Propulsion System",
+          "failureMode": "Bearing wear...",
+          "dateReported": "2025-07-12",
+          "technician": "ENG-SG-05",
+          "riskScore": "Medium",
+          "status": "Closed"
+        },
+        {
+          "caseId": "AFB003-0015",
+          "faultCode": "FE-ENG-009",
+          "component": "Motor / Drive Unit",
+          "failureMode": "Thermal stress...",
+          "dateReported": "2025-08-20",
+          "technician": "ENG-SG-03",
+          "riskScore": "High",
+          "status": "Closed"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-09",
+          "duration": "85m",
+          "details": "Max Alt: 200m • Dist: 40km • Avg Speed: 20m/h"
+        },
+        {
+          "date": "2025-10-10",
+          "duration": "95m",
+          "details": "Max Alt: 220m • Dist: 45km • Avg Speed: 21m/h"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "87%",
+        "predictedNextFaultType": "Bearing Degradation",
+        "confidenceScore": "45%"
+      }
+    },
+    {
+      "id": "12-7845",
+      "name": "MQ-9 Reaper",
+      "modelName": "MQ-9 Reaper",
+      "status": "READY",
+      "color": "ready",
+      "lastUpdated": "12:40:45 UTC",
+      "droneOverview": {
+        "status": "Ready",
+        "base": "Base-5",
+        "battery": 92,
+        "flightHours": 178.5,
+        "missionsCompleted": 53,
+        "lastMaintenance": "2025-07-18",
+        "nextMaintenanceDue": "2025-11-18",
+        "firmwareVersion": "v4.8.3"
+      },
+      "overallHealth": {
+        "percentage": 92,
+        "score": 92,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "21%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 87, "voltage": 12.05 },
+        { "time": "5d", "battery": 88, "voltage": 12.15 },
+        { "time": "4d", "battery": 90, "voltage": 12.28 },
+        { "time": "3d", "battery": 91, "voltage": 12.35 },
+        { "time": "2d", "battery": 92, "voltage": 12.42 },
+        { "time": "1d", "battery": 93, "voltage": 12.48 },
+        { "time": "0d", "battery": 92, "voltage": 12.45 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 9 },
+        { "name": "Motor 2", "percentage": 6 },
+        { "name": "Motor 3", "percentage": 8 },
+        { "name": "GPS", "percentage": 5 },
+        { "name": "Sensors", "percentage": 7 },
+        { "name": "Comms", "percentage": 4 },
+        { "name": "AI", "percentage": 6 }
+      ],
+      "recentAlerts": [],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB004-0003",
+          "faultCode": "FP-PRP-001",
+          "component": "Propulsion System",
+          "failureMode": "Propeller balance...",
+          "dateReported": "2025-06-15",
+          "technician": "ENG-SG-01",
+          "riskScore": "Low",
+          "status": "Closed"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-11",
+          "duration": "110m",
+          "details": "Max Alt: 290m • Dist: 52km • Avg Speed: 24m/h"
+        },
+        {
+          "date": "2025-10-12",
+          "duration": "105m",
+          "details": "Max Alt: 275m • Dist: 48km • Avg Speed: 23m/h"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "92%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "6%"
+      }
+    },
+    {
+      "id": "12-6721",
+      "name": "MQ-9 Reaper",
+      "modelName": "MQ-9 Reaper",
+      "status": "READY",
+      "color": "ready",
+      "lastUpdated": "12:28:10 UTC",
+      "droneOverview": {
+        "status": "Ready",
+        "base": "Base-6",
+        "battery": 89,
+        "flightHours": 142.3,
+        "missionsCompleted": 40,
+        "lastMaintenance": "2025-08-22",
+        "nextMaintenanceDue": "2025-12-22",
+        "firmwareVersion": "v4.8.0"
+      },
+      "overallHealth": {
+        "percentage": 89,
+        "score": 89,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "20%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 83, "voltage": 11.95 },
+        { "time": "5d", "battery": 85, "voltage": 12.08 },
+        { "time": "4d", "battery": 87, "voltage": 12.2 },
+        { "time": "3d", "battery": 88, "voltage": 12.28 },
+        { "time": "2d", "battery": 89, "voltage": 12.35 },
+        { "time": "1d", "battery": 90, "voltage": 12.4 },
+        { "time": "0d", "battery": 89, "voltage": 12.38 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 11 },
+        { "name": "Motor 2", "percentage": 9 },
+        { "name": "Motor 3", "percentage": 10 },
+        { "name": "GPS", "percentage": 6 },
+        { "name": "Sensors", "percentage": 8 },
+        { "name": "Comms", "percentage": 5 },
+        { "name": "AI", "percentage": 7 }
+      ],
+      "recentAlerts": [],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB005-0007",
+          "faultCode": "FE-SEN-012",
+          "component": "Sensor Array",
+          "failureMode": "Sensor noise...",
+          "dateReported": "2025-09-10",
+          "technician": "ENG-SG-04",
+          "riskScore": "Low",
+          "status": "Closed"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-10",
+          "duration": "75m",
+          "details": "Max Alt: 240m • Dist: 42km • Avg Speed: 21m/h"
+        },
+        {
+          "date": "2025-10-11",
+          "duration": "80m",
+          "details": "Max Alt: 255m • Dist: 46km • Avg Speed: 22m/h"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "89%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "7%"
+      }
+    },
+    {
+      "id": "XQ58-001",
+      "name": "XQ-58 Valkyrie",
+      "modelName": "XQ-58 Valkyrie",
+      "status": "READY",
+      "color": "ready",
+      "lastUpdated": "12:50:30 UTC",
+      "droneOverview": {
+        "status": "Ready",
+        "base": "Base-7",
+        "battery": 94,
+        "flightHours": 67.5,
+        "missionsCompleted": 28,
+        "lastMaintenance": "2025-09-01",
+        "nextMaintenanceDue": "2025-12-01",
+        "firmwareVersion": "v5.1.0"
+      },
+      "overallHealth": {
+        "percentage": 94,
+        "score": 94,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "25%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 90, "voltage": 12.2 },
+        { "time": "5d", "battery": 91, "voltage": 12.3 },
+        { "time": "4d", "battery": 92, "voltage": 12.35 },
+        { "time": "3d", "battery": 93, "voltage": 12.4 },
+        { "time": "2d", "battery": 94, "voltage": 12.48 },
+        { "time": "1d", "battery": 95, "voltage": 12.52 },
+        { "time": "0d", "battery": 94, "voltage": 12.5 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 5 },
+        { "name": "Motor 2", "percentage": 3 },
+        { "name": "Motor 3", "percentage": 4 },
+        { "name": "GPS", "percentage": 2 },
+        { "name": "Sensors", "percentage": 3 },
+        { "name": "Comms", "percentage": 2 },
+        { "name": "AI", "percentage": 3 }
+      ],
+      "recentAlerts": [],
+      "maintenanceHistory": [],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-12",
+          "duration": "60m",
+          "details": "Max Alt: 350m • Dist: 65km • Avg Speed: 28m/h"
+        },
+        {
+          "date": "2025-10-13",
+          "duration": "55m",
+          "details": "Max Alt: 340m • Dist: 60km • Avg Speed: 27m/h"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "94%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "2%"
+      }
+    },
+    {
+      "id": "12-5831",
+      "name": "RQ-4 Global Hawk",
+      "modelName": "RQ-4 Global Hawk",
+      "status": "WARNING",
+      "color": "warning",
+      "lastUpdated": "12:42:05 UTC",
+      "droneOverview": {
+        "status": "Warning",
+        "base": "Base-8",
+        "battery": 45,
+        "flightHours": 245.8,
+        "missionsCompleted": 62,
+        "lastMaintenance": "2025-05-20",
+        "nextMaintenanceDue": "2025-10-20",
+        "firmwareVersion": "v4.3.1"
+      },
+      "overallHealth": {
+        "percentage": 52,
+        "score": 52,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "12%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 72, "voltage": 11.5 },
+        { "time": "5d", "battery": 65, "voltage": 11.2 },
+        { "time": "4d", "battery": 58, "voltage": 10.9 },
+        { "time": "3d", "battery": 52, "voltage": 10.6 },
+        { "time": "2d", "battery": 48, "voltage": 10.4 },
+        { "time": "1d", "battery": 46, "voltage": 10.2 },
+        { "time": "0d", "battery": 45, "voltage": 10.1 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 38 },
+        { "name": "Motor 2", "percentage": 42 },
+        { "name": "Motor 3", "percentage": 35 },
+        { "name": "GPS", "percentage": 28 },
+        { "name": "Sensors", "percentage": 45 },
+        { "name": "Comms", "percentage": 32 },
+        { "name": "AI", "percentage": 40 }
+      ],
+      "recentAlerts": [
+        { "level": "High", "message": "Battery capacity degradation detected" },
+        { "level": "Medium", "message": "Motor 2 efficiency below 70%" }
+      ],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB006-0010",
+          "faultCode": "FE-BAT-002",
+          "component": "Battery System",
+          "failureMode": "Battery degradation...",
+          "dateReported": "2025-09-15",
+          "technician": "ENG-SG-06",
+          "riskScore": "High",
+          "status": "In Progress"
+        },
+        {
+          "caseId": "AFB006-0016",
+          "faultCode": "FE-ENG-006",
+          "component": "Motor / Drive Unit",
+          "failureMode": "Motor coil insulation...",
+          "dateReported": "2025-10-01",
+          "technician": "ENG-SG-02",
+          "riskScore": "Critical",
+          "status": "Open"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-08",
+          "duration": "50m",
+          "details": "Max Alt: 180m • Dist: 35km • Avg Speed: 19m/h"
+        },
+        {
+          "date": "2025-10-09",
+          "duration": "45m",
+          "details": "Max Alt: 165m • Dist: 30km • Avg Speed: 17m/h"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "45%",
+        "predictedNextFaultType": "Battery Failure",
+        "confidenceScore": "76%"
+      }
+    },
+    {
+      "id": "12-6983",
+      "name": "XQ-58 Valkyrie",
+      "modelName": "XQ-58 Valkyrie",
+      "status": "MAINTENANCE",
+      "color": "maintenance",
+      "lastUpdated": "12:15:40 UTC",
+      "droneOverview": {
+        "status": "Maintenance",
+        "base": "Base-9",
+        "battery": 0,
+        "flightHours": 189.2,
+        "missionsCompleted": 44,
+        "lastMaintenance": "2025-10-01",
+        "nextMaintenanceDue": "2025-11-01",
+        "firmwareVersion": "v5.0.8"
+      },
+      "overallHealth": {
+        "percentage": 35,
+        "score": 35,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "8%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 60, "voltage": 10.8 },
+        { "time": "5d", "battery": 45, "voltage": 10.2 },
+        { "time": "4d", "battery": 30, "voltage": 9.5 },
+        { "time": "3d", "battery": 15, "voltage": 8.8 },
+        { "time": "2d", "battery": 8, "voltage": 8.2 },
+        { "time": "1d", "battery": 2, "voltage": 7.8 },
+        { "time": "0d", "battery": 0, "voltage": 7.5 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 58 },
+        { "name": "Motor 2", "percentage": 62 },
+        { "name": "Motor 3", "percentage": 55 },
+        { "name": "GPS", "percentage": 48 },
+        { "name": "Sensors", "percentage": 65 },
+        { "name": "Comms", "percentage": 52 },
+        { "name": "AI", "percentage": 60 }
+      ],
+      "recentAlerts": [
+        { "level": "High", "message": "Complete battery discharge required" },
+        { "level": "High", "message": "Motor brushes require replacement" },
+        { "level": "Medium", "message": "Firmware update pending" }
+      ],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB007-0022",
+          "faultCode": "FE-BAT-005",
+          "component": "Battery System",
+          "failureMode": "Battery cell imbalance...",
+          "dateReported": "2025-10-05",
+          "technician": "ENG-SG-07",
+          "riskScore": "Critical",
+          "status": "In Progress"
+        },
+        {
+          "caseId": "AFB007-0028",
+          "faultCode": "FE-ENG-011",
+          "component": "Motor / Drive Unit",
+          "failureMode": "Motor brush wear...",
+          "dateReported": "2025-10-10",
+          "technician": "ENG-SG-03",
+          "riskScore": "Critical",
+          "status": "In Progress"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-03",
+          "duration": "30m",
+          "details": "Max Alt: 120m • Dist: 20km • Avg Speed: 15m/h"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "0%",
+        "predictedNextFaultType": "Complete Failure",
+        "confidenceScore": "99%"
+      }
+    },
+    {
+      "id": "12-8456",
+      "name": "RQ-4 Global Hawk",
+      "modelName": "RQ-4 Global Hawk",
+      "status": "WARNING",
+      "color": "warning",
+      "lastUpdated": "12:33:20 UTC",
+      "droneOverview": {
+        "status": "Warning",
+        "base": "Base-10",
+        "battery": 52,
+        "flightHours": 198.5,
+        "missionsCompleted": 48,
+        "lastMaintenance": "2025-06-10",
+        "nextMaintenanceDue": "2025-10-10",
+        "firmwareVersion": "v4.3.2"
+      },
+      "overallHealth": {
+        "percentage": 58,
+        "score": 58,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "14%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 75, "voltage": 11.6 },
+        { "time": "5d", "battery": 70, "voltage": 11.3 },
+        { "time": "4d", "battery": 65, "voltage": 11.0 },
+        { "time": "3d", "battery": 60, "voltage": 10.7 },
+        { "time": "2d", "battery": 56, "voltage": 10.5 },
+        { "time": "1d", "battery": 54, "voltage": 10.3 },
+        { "time": "0d", "battery": 52, "voltage": 10.2 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 35 },
+        { "name": "Motor 2", "percentage": 38 },
+        { "name": "Motor 3", "percentage": 32 },
+        { "name": "GPS", "percentage": 25 },
+        { "name": "Sensors", "percentage": 42 },
+        { "name": "Comms", "percentage": 30 },
+        { "name": "AI", "percentage": 36 }
+      ],
+      "recentAlerts": [
+        { "level": "High", "message": "Scheduled maintenance overdue" },
+        { "level": "Medium", "message": "Battery health declining" }
+      ],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB008-0011",
+          "faultCode": "FP-PRP-003",
+          "component": "Propulsion System",
+          "failureMode": "Propeller crack detected...",
+          "dateReported": "2025-08-30",
+          "technician": "ENG-SG-01",
+          "riskScore": "High",
+          "status": "Closed"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-06",
+          "duration": "60m",
+          "details": "Max Alt: 200m • Dist: 38km • Avg Speed: 20m/h"
+        },
+        {
+          "date": "2025-10-07",
+          "duration": "55m",
+          "details": "Max Alt: 185m • Dist: 33km • Avg Speed: 18m/h"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "52%",
+        "predictedNextFaultType": "Battery Failure",
+        "confidenceScore": "68%"
+      }
+    },
+    {
+      "id": "06-3255",
+      "name": "MQ-1 Predator",
+      "modelName": "MQ-1 Predator",
+      "status": "MAINTENANCE",
+      "color": "maintenance",
+      "lastUpdated": "11:45:30 UTC",
+      "droneOverview": {
+        "status": "Maintenance",
+        "base": "Base-11",
+        "battery": 0,
+        "flightHours": 267.4,
+        "missionsCompleted": 64,
+        "lastMaintenance": "2025-10-08",
+        "nextMaintenanceDue": "2025-11-08",
+        "firmwareVersion": "v4.2.9"
+      },
+      "overallHealth": {
+        "percentage": 28,
+        "score": 28,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "5%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 55, "voltage": 10.6 },
+        { "time": "5d", "battery": 40, "voltage": 10.0 },
+        { "time": "4d", "battery": 25, "voltage": 9.2 },
+        { "time": "3d", "battery": 12, "voltage": 8.5 },
+        { "time": "2d", "battery": 5, "voltage": 8.0 },
+        { "time": "1d", "battery": 2, "voltage": 7.6 },
+        { "time": "0d", "battery": 0, "voltage": 7.2 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 72 },
+        { "name": "Motor 2", "percentage": 68 },
+        { "name": "Motor 3", "percentage": 75 },
+        { "name": "GPS", "percentage": 58 },
+        { "name": "Sensors", "percentage": 78 },
+        { "name": "Comms", "percentage": 62 },
+        { "name": "AI", "percentage": 70 }
+      ],
+      "recentAlerts": [
+        { "level": "High", "message": "Critical: Multiple motor failures detected" },
+        { "level": "High", "message": "Sensor array requires recalibration" },
+        { "level": "Critical", "message": "Complete system overhaul recommended" }
+      ],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB009-0019",
+          "faultCode": "FE-ENG-010",
+          "component": "Motor / Drive Unit",
+          "failureMode": "Motor bearing failure...",
+          "dateReported": "2025-10-08",
+          "technician": "ENG-SG-08",
+          "riskScore": "Critical",
+          "status": "In Progress"
+        },
+        {
+          "caseId": "AFB009-0025",
+          "faultCode": "FE-SEN-018",
+          "component": "Sensor Array",
+          "failureMode": "Multiple sensor faults...",
+          "dateReported": "2025-10-09",
+          "technician": "ENG-SG-04",
+          "riskScore": "Critical",
+          "status": "In Progress"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-04",
+          "duration": "20m",
+          "details": "Max Alt: 80m • Dist: 12km • Avg Speed: 12m/h"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "0%",
+        "predictedNextFaultType": "Complete Failure",
+        "confidenceScore": "98%"
+      }
+    },
+    {
+      "id": "XQ58-019",
+      "name": "XQ-58 Valkyrie",
+      "modelName": "XQ-58 Valkyrie",
+      "status": "CRITICAL",
+      "color": "critical",
+      "lastUpdated": "11:50:15 UTC",
+      "droneOverview": {
+        "status": "Critical",
+        "base": "Base-12",
+        "battery": 8,
+        "flightHours": 156.7,
+        "missionsCompleted": 35,
+        "lastMaintenance": "2025-09-05",
+        "nextMaintenanceDue": "2025-10-05",
+        "firmwareVersion": "v5.0.9"
+      },
+      "overallHealth": {
+        "percentage": 15,
+        "score": 15,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "3%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 68, "voltage": 11.4 },
+        { "time": "5d", "battery": 52, "voltage": 10.8 },
+        { "time": "4d", "battery": 38, "voltage": 10.1 },
+        { "time": "3d", "battery": 25, "voltage": 9.4 },
+        { "time": "2d", "battery": 15, "voltage": 8.8 },
+        { "time": "1d", "battery": 10, "voltage": 8.3 },
+        { "time": "0d", "battery": 8, "voltage": 8.1 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 82 },
+        { "name": "Motor 2", "percentage": 78 },
+        { "name": "Motor 3", "percentage": 85 },
+        { "name": "GPS", "percentage": 72 },
+        { "name": "Sensors", "percentage": 88 },
+        { "name": "Comms", "percentage": 75 },
+        { "name": "AI", "percentage": 80 }
+      ],
+      "recentAlerts": [
+        { "level": "Critical", "message": "Imminent power failure - grounding recommended" },
+        { "level": "Critical", "message": "All motors operating at critical thresholds" },
+        { "level": "High", "message": "GPS/Navigation system failure imminent" }
+      ],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB010-0032",
+          "faultCode": "FE-BAT-008",
+          "component": "Battery System",
+          "failureMode": "Battery pack failure...",
+          "dateReported": "2025-10-11",
+          "technician": "ENG-SG-09",
+          "riskScore": "Critical",
+          "status": "In Progress"
+        },
+        {
+          "caseId": "AFB010-0038",
+          "faultCode": "FE-ENG-014",
+          "component": "Motor / Drive Unit",
+          "failureMode": "Motor coil failure...",
+          "dateReported": "2025-10-12",
+          "technician": "ENG-SG-05",
+          "riskScore": "Critical",
+          "status": "In Progress"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-07",
+          "duration": "15m",
+          "details": "Max Alt: 75m • Dist: 8km • Avg Speed: 10m/h"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "8%",
+        "predictedNextFaultType": "Complete System Failure",
+        "confidenceScore": "96%"
+      }
+    },
+    {
+      "id": "RQ11-278",
+      "name": "RQ-11 Raven",
+      "modelName": "RQ-11 Raven",
+      "status": "INACTIVE",
+      "color": "inactive",
+      "lastUpdated": "10:12:45 UTC",
+      "droneOverview": {
+        "status": "Inactive",
+        "base": "Base-13",
+        "battery": 0,
+        "flightHours": 312.6,
+        "missionsCompleted": 78,
+        "lastMaintenance": "2025-04-15",
+        "nextMaintenanceDue": "2025-09-15",
+        "firmwareVersion": "v3.8.5"
+      },
+      "overallHealth": {
+        "percentage": 8,
+        "score": 8,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "0%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 15, "voltage": 8.5 },
+        { "time": "5d", "battery": 10, "voltage": 8.0 },
+        { "time": "4d", "battery": 5, "voltage": 7.5 },
+        { "time": "3d", "battery": 2, "voltage": 7.0 },
+        { "time": "2d", "battery": 0, "voltage": 6.8 },
+        { "time": "1d", "battery": 0, "voltage": 6.5 },
+        { "time": "0d", "battery": 0, "voltage": 6.2 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 95 },
+        { "name": "Motor 2", "percentage": 92 },
+        { "name": "Motor 3", "percentage": 98 },
+        { "name": "GPS", "percentage": 85 },
+        { "name": "Sensors", "percentage": 99 },
+        { "name": "Comms", "percentage": 88 },
+        { "name": "AI", "percentage": 92 }
+      ],
+      "recentAlerts": [
+        { "level": "Critical", "message": "Drone grounded - awaiting major overhaul" },
+        { "level": "Critical", "message": "End of service life reached" }
+      ],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB011-0040",
+          "faultCode": "FE-END-001",
+          "component": "End of Service",
+          "failureMode": "Airframe structural failure...",
+          "dateReported": "2025-09-20",
+          "technician": "ENG-SG-10",
+          "riskScore": "Critical",
+          "status": "Closed"
+        }
+      ],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "0%",
+        "predictedNextFaultType": "Retired",
+        "confidenceScore": "100%"
+      }
+    },
+    {
+      "id": "18-7719",
+      "name": "MQ-9 Reaper",
+      "modelName": "MQ-9 Reaper",
+      "status": "OFFLINE",
+      "color": "offline",
+      "lastUpdated": "08:30:00 UTC",
+      "droneOverview": {
+        "status": "Offline",
+        "base": "Base-14",
+        "battery": 0,
+        "flightHours": 289.3,
+        "missionsCompleted": 71,
+        "lastMaintenance": "2025-05-28",
+        "nextMaintenanceDue": "2025-10-28",
+        "firmwareVersion": "v4.8.2"
+      },
+      "overallHealth": {
+        "percentage": 0,
+        "score": 0,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "0%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 20, "voltage": 8.8 },
+        { "time": "5d", "battery": 15, "voltage": 8.4 },
+        { "time": "4d", "battery": 8, "voltage": 7.9 },
+        { "time": "3d", "battery": 3, "voltage": 7.3 },
+        { "time": "2d", "battery": 0, "voltage": 6.9 },
+        { "time": "1d", "battery": 0, "voltage": 6.5 },
+        { "time": "0d", "battery": 0, "voltage": 6.0 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 100 },
+        { "name": "Motor 2", "percentage": 100 },
+        { "name": "Motor 3", "percentage": 100 },
+        { "name": "GPS", "percentage": 100 },
+        { "name": "Sensors", "percentage": 100 },
+        { "name": "Comms", "percentage": 100 },
+        { "name": "AI", "percentage": 100 }
+      ],
+      "recentAlerts": [
+        { "level": "Critical", "message": "Communication lost - last seen 16 hours ago" },
+        { "level": "Critical", "message": "Unit presumed damaged or lost" }
+      ],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB012-0045",
+          "faultCode": "FE-LOS-001",
+          "component": "Communications",
+          "failureMode": "Signal lost...",
+          "dateReported": "2025-10-13",
+          "technician": "OPS-CENTER-01",
+          "riskScore": "Critical",
+          "status": "Open"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-12",
+          "duration": "Unknown",
+          "details": "Lost at coordinates 35.2847°N 120.5834°W at 2000m altitude"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "0%",
+        "predictedNextFaultType": "Unable to Predict",
+        "confidenceScore": "0%"
+      }
+    },
+    {
+      "id": "RQ11-223",
+      "name": "RQ-11 Raven",
+      "modelName": "RQ-11 Raven",
+      "status": "CRITICAL",
+      "color": "critical",
+      "lastUpdated": "12:22:10 UTC",
+      "droneOverview": {
+        "status": "Critical",
+        "base": "Base-15",
+        "battery": 5,
+        "flightHours": 234.8,
+        "missionsCompleted": 56,
+        "lastMaintenance": "2025-08-01",
+        "nextMaintenanceDue": "2025-10-01",
+        "firmwareVersion": "v3.8.6"
+      },
+      "overallHealth": {
+        "percentage": 12,
+        "score": 12,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "2%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 65, "voltage": 11.2 },
+        { "time": "5d", "battery": 48, "voltage": 10.6 },
+        { "time": "4d", "battery": 35, "voltage": 9.9 },
+        { "time": "3d", "battery": 22, "voltage": 9.2 },
+        { "time": "2d", "battery": 12, "voltage": 8.6 },
+        { "time": "1d", "battery": 7, "voltage": 8.1 },
+        { "time": "0d", "battery": 5, "voltage": 7.8 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 88 },
+        { "name": "Motor 2", "percentage": 85 },
+        { "name": "Motor 3", "percentage": 90 },
+        { "name": "GPS", "percentage": 78 },
+        { "name": "Sensors", "percentage": 92 },
+        { "name": "Comms", "percentage": 80 },
+        { "name": "AI", "percentage": 86 }
+      ],
+      "recentAlerts": [
+        { "level": "Critical", "message": "Imminent system shutdown - landing required" },
+        { "level": "High", "message": "Motor coil temperatures critical" }
+      ],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB013-0048",
+          "faultCode": "FE-BAT-007",
+          "component": "Battery System",
+          "failureMode": "Battery thermal runaway risk...",
+          "dateReported": "2025-10-12",
+          "technician": "ENG-SG-11",
+          "riskScore": "Critical",
+          "status": "In Progress"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-13",
+          "duration": "8m",
+          "details": "Max Alt: 50m • Dist: 3km • Avg Speed: 8m/h"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "5%",
+        "predictedNextFaultType": "System Shutdown",
+        "confidenceScore": "94%"
+      }
+    },
+    {
+      "id": "RQ11-244",
+      "name": "RQ-11 Raven",
+      "modelName": "RQ-11 Raven",
+      "status": "CRITICAL",
+      "color": "critical",
+      "lastUpdated": "12:18:35 UTC",
+      "droneOverview": {
+        "status": "Critical",
+        "base": "Base-16",
+        "battery": 3,
+        "flightHours": 256.2,
+        "missionsCompleted": 61,
+        "lastMaintenance": "2025-07-08",
+        "nextMaintenanceDue": "2025-10-08",
+        "firmwareVersion": "v3.8.5"
+      },
+      "overallHealth": {
+        "percentage": 9,
+        "score": 9,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "1%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 62, "voltage": 11.1 },
+        { "time": "5d", "battery": 45, "voltage": 10.4 },
+        { "time": "4d", "battery": 30, "voltage": 9.7 },
+        { "time": "3d", "battery": 18, "voltage": 9.0 },
+        { "time": "2d", "battery": 8, "voltage": 8.4 },
+        { "time": "1d", "battery": 4, "voltage": 7.9 },
+        { "time": "0d", "battery": 3, "voltage": 7.6 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 91 },
+        { "name": "Motor 2", "percentage": 88 },
+        { "name": "Motor 3", "percentage": 94 },
+        { "name": "GPS", "percentage": 82 },
+        { "name": "Sensors", "percentage": 95 },
+        { "name": "Comms", "percentage": 84 },
+        { "name": "AI", "percentage": 89 }
+      ],
+      "recentAlerts": [
+        { "level": "Critical", "message": "Power depletion imminent - less than 5 minutes flight time" },
+        { "level": "Critical", "message": "Forced landing recommended immediately" }
+      ],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB014-0052",
+          "faultCode": "FE-END-002",
+          "component": "Power System",
+          "failureMode": "Complete power failure imminent...",
+          "dateReported": "2025-10-13",
+          "technician": "ENG-SG-12",
+          "riskScore": "Critical",
+          "status": "In Progress"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-13",
+          "duration": "5m",
+          "details": "Max Alt: 35m • Dist: 1.5km • Avg Speed: 6m/h"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "3%",
+        "predictedNextFaultType": "Power Failure",
+        "confidenceScore": "97%"
+      }
+    },
+    {
+      "id": "RQ11-282",
+      "name": "RQ-11 Raven",
+      "modelName": "RQ-11 Raven",
+      "status": "CRITICAL",
+      "color": "critical",
+      "lastUpdated": "12:25:50 UTC",
+      "droneOverview": {
+        "status": "Critical",
+        "base": "Base-17",
+        "battery": 2,
+        "flightHours": 278.5,
+        "missionsCompleted": 68,
+        "lastMaintenance": "2025-06-20",
+        "nextMaintenanceDue": "2025-09-20",
+        "firmwareVersion": "v3.8.4"
+      },
+      "overallHealth": {
+        "percentage": 6,
+        "score": 6,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "0.5%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 58, "voltage": 10.9 },
+        { "time": "5d", "battery": 42, "voltage": 10.2 },
+        { "time": "4d", "battery": 28, "voltage": 9.5 },
+        { "time": "3d", "battery": 15, "voltage": 8.8 },
+        { "time": "2d", "battery": 6, "voltage": 8.2 },
+        { "time": "1d", "battery": 3, "voltage": 7.7 },
+        { "time": "0d", "battery": 2, "voltage": 7.4 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 93 },
+        { "name": "Motor 2", "percentage": 90 },
+        { "name": "Motor 3", "percentage": 96 },
+        { "name": "GPS", "percentage": 85 },
+        { "name": "Sensors", "percentage": 97 },
+        { "name": "Comms", "percentage": 87 },
+        { "name": "AI", "percentage": 92 }
+      ],
+      "recentAlerts": [
+        { "level": "Critical", "message": "CRITICAL: Less than 2 minutes before complete power loss" },
+        { "level": "Critical", "message": "Emergency landing sequence initiated" }
+      ],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB015-0055",
+          "faultCode": "FE-END-003",
+          "component": "Power System",
+          "failureMode": "Battery complete failure...",
+          "dateReported": "2025-10-13",
+          "technician": "ENG-SG-13",
+          "riskScore": "Critical",
+          "status": "In Progress"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-13",
+          "duration": "2m",
+          "details": "Max Alt: 20m • Dist: 0.5km • Avg Speed: 5m/h"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "2%",
+        "predictedNextFaultType": "Complete Power Loss",
+        "confidenceScore": "99%"
+      }
+    },
+    {
+      "id": "RQ11-309",
+      "name": "RQ-11 Raven",
+      "modelName": "RQ-11 Raven",
+      "status": "CRITICAL",
+      "color": "critical",
+      "lastUpdated": "12:14:25 UTC",
+      "droneOverview": {
+        "status": "Critical",
+        "base": "Base-18",
+        "battery": 1,
+        "flightHours": 291.7,
+        "missionsCompleted": 72,
+        "lastMaintenance": "2025-06-05",
+        "nextMaintenanceDue": "2025-09-05",
+        "firmwareVersion": "v3.8.3"
+      },
+      "overallHealth": {
+        "percentage": 4,
+        "score": 4,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "0.2%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 55, "voltage": 10.8 },
+        { "time": "5d", "battery": 40, "voltage": 10.1 },
+        { "time": "4d", "battery": 25, "voltage": 9.3 },
+        { "time": "3d", "battery": 12, "voltage": 8.6 },
+        { "time": "2d", "battery": 4, "voltage": 8.0 },
+        { "time": "1d", "battery": 2, "voltage": 7.5 },
+        { "time": "0d", "battery": 1, "voltage": 7.2 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 95 },
+        { "name": "Motor 2", "percentage": 92 },
+        { "name": "Motor 3", "percentage": 98 },
+        { "name": "GPS", "percentage": 87 },
+        { "name": "Sensors", "percentage": 99 },
+        { "name": "Comms", "percentage": 89 },
+        { "name": "AI", "percentage": 94 }
+      ],
+      "recentAlerts": [
+        { "level": "Critical", "message": "CRITICAL: Less than 1 minute until power failure" },
+        { "level": "Critical", "message": "Immediate emergency landing required" }
+      ],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB016-0058",
+          "faultCode": "FE-END-004",
+          "component": "Power System",
+          "failureMode": "Battery total depletion imminent...",
+          "dateReported": "2025-10-13",
+          "technician": "ENG-SG-14",
+          "riskScore": "Critical",
+          "status": "In Progress"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-13",
+          "duration": "1m",
+          "details": "Max Alt: 10m • Dist: 0.2km • Avg Speed: 4m/h"
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "1%",
+        "predictedNextFaultType": "Power Failure - Imminent",
+        "confidenceScore": "100%"
+      }
+    },
+    {
+      "id": "RQ11-325",
+      "name": "RQ-11 Raven",
+      "modelName": "RQ-11 Raven",
+      "status": "CRITICAL",
+      "color": "critical",
+      "lastUpdated": "12:08:55 UTC",
+      "droneOverview": {
+        "status": "Critical",
+        "base": "Base-19",
+        "battery": 0,
+        "flightHours": 299.3,
+        "missionsCompleted": 75,
+        "lastMaintenance": "2025-05-18",
+        "nextMaintenanceDue": "2025-08-18",
+        "firmwareVersion": "v3.8.2"
+      },
+      "overallHealth": {
+        "percentage": 0,
+        "score": 0,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "0%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 52, "voltage": 10.7 },
+        { "time": "5d", "battery": 38, "voltage": 10.0 },
+        { "time": "4d", "battery": 22, "voltage": 9.2 },
+        { "time": "3d", "battery": 10, "voltage": 8.4 },
+        { "time": "2d", "battery": 2, "voltage": 7.8 },
+        { "time": "1d", "battery": 0, "voltage": 7.2 },
+        { "time": "0d", "battery": 0, "voltage": 6.8 }
+      ],
+      "faultTrends": [
+        { "name": "Motor 1", "percentage": 97 },
+        { "name": "Motor 2", "percentage": 94 },
+        { "name": "Motor 3", "percentage": 100 },
+        { "name": "GPS", "percentage": 89 },
+        { "name": "Sensors", "percentage": 100 },
+        { "name": "Comms", "percentage": 91 },
+        { "name": "AI", "percentage": 96 }
+      ],
+      "recentAlerts": [
+        { "level": "Critical", "message": "CRITICAL: Complete power failure - drone grounded" },
+        { "level": "Critical", "message": "Unit completely non-functional" }
+      ],
+      "maintenanceHistory": [
+        {
+          "caseId": "AFB017-0061",
+          "faultCode": "FE-END-005",
+          "component": "Power System",
+          "failureMode": "Complete battery depletion...",
+          "dateReported": "2025-10-13",
+          "technician": "ENG-SG-15",
+          "riskScore": "Critical",
+          "status": "In Progress"
+        }
+      ],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "0%",
+        "predictedNextFaultType": "Non-Functional",
+        "confidenceScore": "100%"
+      }
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+{
+  "assetType": "boat",
+  "assets": [
+    {
+      "id": "CCM-851",
+      "name": "Combatant Craft Medium",
+      "modelName": "CCM",
+      "status": "READY",
+      "color": "ready",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
+      "assetOverview": {
+        "status": "Operational",
+        "base": "NSW Base-1",
+        "engineHours": 812.5,
+        "missionsCompleted": 122,
+        "lastMaintenance": "2025-07-10",
+        "nextMaintenanceDue": "2025-11-20",
+        "firmwareVersion": "v3.8.1"
+      },
+      "overallHealth": {
+        "percentage": 92,
+        "score": 92,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "92%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 85, "voltage": 12.8 },
+        { "time": "5d", "battery": 84, "voltage": 12.7 },
+        { "time": "4d", "battery": 86, "voltage": 12.9 },
+        { "time": "3d", "battery": 88, "voltage": 13.0 },
+        { "time": "2d", "battery": 89, "voltage": 13.1 },
+        { "time": "1d", "battery": 90, "voltage": 13.2 },
+        { "time": "0d", "battery": 92, "voltage": 13.2 }
+      ],
+      "faultTrends": [{ "name": "Port Engine", "percentage": 90 }, { "name": "Electrical Bus", "percentage": 91 }],
+      "recentAlerts": [],
+      "maintenanceHistory": [
+        {
+          "caseId": "FB001-0001",
+          "faultCode": "FP-PRP-002",
+          "component": "Propulsion System",
+          "failureMode": "Propeller vibration...",
+          "dateReported": "2025-10-09",
+          "technician": "ENG-S0-01",
+          "riskScore": "High",
+          "status": "Closed"
+        }
+      ],
+      "recentFlightLogs": [
+        {
+          "date": "2025-10-12 • 45m",
+          "duration": "Max Alt: 120m • Dist: 12km • Avg Speed: 18km/h",
+          "details": ""
+        }
+      ],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "82%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "95%"
+      }
+    },
+    {
+      "id": "CCM-867",
+      "name": "Combatant Craft Medium",
+      "modelName": "CCM",
+      "status": "AT-RISK",
+      "color": "warning",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
+      "assetOverview": {
+        "status": "At Risk",
+        "base": "NSW Base-2",
+        "engineHours": 943.2,
+        "missionsCompleted": 147,
+        "lastMaintenance": "2025-06-20",
+        "nextMaintenanceDue": "2025-10-28",
+        "firmwareVersion": "v3.9.2"
+      },
+      "overallHealth": {
+        "percentage": 62,
+        "score": 62,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "62%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 72, "voltage": 12.4 },
+        { "time": "5d", "battery": 75, "voltage": 12.5 },
+        { "time": "4d", "battery": 76, "voltage": 12.6 },
+        { "time": "3d", "battery": 78, "voltage": 12.7 },
+        { "time": "2d", "battery": 80, "voltage": 12.8 },
+        { "time": "1d", "battery": 81, "voltage": 12.9 },
+        { "time": "0d", "battery": 83, "voltage": 13.0 }
+      ],
+      "faultTrends": [{ "name": "Port Engine", "percentage": 40 }, { "name": "Hydraulics", "percentage": 35 }],
+      "recentAlerts": [{ "level": "Medium", "message": "Hydraulic pressure fluctuation detected" }],
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "41%",
+        "predictedNextFaultType": "Hydraulics",
+        "confidenceScore": "78%"
+      }
+    },
+    {
+      "id": "CCA-432",
+      "name": "Combatant Craft Assault",
+      "modelName": "CCA",
+      "status": "CRITICAL",
+      "color": "critical",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
+      "assetOverview": {
+        "status": "Critical",
+        "base": "NSW Base-3",
+        "engineHours": 1021,
+        "missionsCompleted": 163,
+        "lastMaintenance": "2025-09-20",
+        "nextMaintenanceDue": "2025-11-15",
+        "firmwareVersion": "v4.1.2"
+      },
+      "overallHealth": {
+        "percentage": 18,
+        "score": 18,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "18%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 88, "voltage": 11.9 },
+        { "time": "5d", "battery": 90, "voltage": 12.0 },
+        { "time": "4d", "battery": 93, "voltage": 12.1 },
+        { "time": "3d", "battery": 95, "voltage": 12.2 },
+        { "time": "2d", "battery": 97, "voltage": 12.3 },
+        { "time": "1d", "battery": 98, "voltage": 12.4 },
+        { "time": "0d", "battery": 99, "voltage": 12.5 }
+      ],
+      "faultTrends": [{ "name": "Port Engine", "percentage": 22 }, { "name": "Electrical Bus", "percentage": 14 }],
+      "recentAlerts": [
+        { "level": "High", "message": "Severe engine vibration detected" },
+        { "level": "High", "message": "Electrical bus instability" }
+      ],
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "6%",
+        "predictedNextFaultType": "Engine Failure",
+        "confidenceScore": "92%"
+      }
+    },
+    {
+      "id": "CCA-448",
+      "name": "Combatant Craft Assault",
+      "modelName": "CCA",
+      "status": "READY",
+      "color": "ready",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
+      "assetOverview": {
+        "status": "Operational",
+        "base": "NSW Base-1",
+        "engineHours": 622,
+        "missionsCompleted": 89,
+        "lastMaintenance": "2025-07-02",
+        "nextMaintenanceDue": "2025-11-05",
+        "firmwareVersion": "v4.0.0"
+      },
+      "overallHealth": {
+        "percentage": 95,
+        "score": 95,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "95%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 61, "voltage": 13.0 },
+        { "time": "5d", "battery": 62, "voltage": 13.1 },
+        { "time": "4d", "battery": 64, "voltage": 13.2 },
+        { "time": "3d", "battery": 63, "voltage": 13.1 },
+        { "time": "2d", "battery": 65, "voltage": 13.2 },
+        { "time": "1d", "battery": 66, "voltage": 13.3 },
+        { "time": "0d", "battery": 65, "voltage": 13.2 }
+      ],
+      "faultTrends": [],
+      "recentAlerts": [],
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "89%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "98%"
+      }
+    },
+    {
+      "id": "CCH-901",
+      "name": "Combatant Craft Heavy",
+      "modelName": "CCH",
+      "status": "READY",
+      "color": "ready",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
+      "assetOverview": {
+        "status": "Operational",
+        "base": "NSW Heavy Ops Base",
+        "engineHours": 1543,
+        "missionsCompleted": 310,
+        "lastMaintenance": "2025-08-11",
+        "nextMaintenanceDue": "2025-11-30",
+        "firmwareVersion": "v5.2.1"
+      },
+      "overallHealth": {
+        "percentage": 88,
+        "score": 88,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "88%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 49, "voltage": 13.2 },
+        { "time": "5d", "battery": 50, "voltage": 13.2 },
+        { "time": "4d", "battery": 52, "voltage": 13.3 },
+        { "time": "3d", "battery": 54, "voltage": 13.4 },
+        { "time": "2d", "battery": 53, "voltage": 13.3 },
+        { "time": "1d", "battery": 55, "voltage": 13.4 },
+        { "time": "0d", "battery": 54, "voltage": 13.3 }
+      ],
+      "faultTrends": [],
+      "recentAlerts": [],
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "78%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "96%"
+      }
+    },
+    {
+      "id": "RHIB-1107",
+      "name": "11m Rigid Hull Inflatable Boat",
+      "modelName": "RHIB-11M",
+      "status": "READY",
+      "color": "ready",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
+      "assetOverview": {
+        "status": "Operational",
+        "base": "NSW Base-5",
+        "engineHours": 410,
+        "missionsCompleted": 72,
+        "lastMaintenance": "2025-07-30",
+        "nextMaintenanceDue": "2025-10-29",
+        "firmwareVersion": "v2.4.8"
+      },
+      "overallHealth": {
+        "percentage": 91,
+        "score": 91,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "91%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 48, "voltage": 13.1 },
+        { "time": "5d", "battery": 49, "voltage": 13.2 },
+        { "time": "4d", "battery": 50, "voltage": 13.2 },
+        { "time": "3d", "battery": 49, "voltage": 13.1 },
+        { "time": "2d", "battery": 51, "voltage": 13.2 },
+        { "time": "1d", "battery": 52, "voltage": 13.3 },
+        { "time": "0d", "battery": 53, "voltage": 13.3 }
+      ],
+      "faultTrends": [],
+      "recentAlerts": [],
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "83%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "97%"
+      }
+    },
+    {
+      "id": "RHIB-1109",
+      "name": "11m Rigid Hull Inflatable Boat",
+      "modelName": "RHIB-11M",
+      "status": "AT-RISK",
+      "color": "warning",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
+      "assetOverview": {
+        "status": "At Risk",
+        "base": "NSW Base-5",
+        "engineHours": 530,
+        "missionsCompleted": 90,
+        "lastMaintenance": "2025-06-25",
+        "nextMaintenanceDue": "2025-10-11",
+        "firmwareVersion": "v2.4.7"
+      },
+      "overallHealth": {
+        "percentage": 59,
+        "score": 59,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "59%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 65, "voltage": 12.6 },
+        { "time": "5d", "battery": 67, "voltage": 12.7 },
+        { "time": "4d", "battery": 69, "voltage": 12.8 },
+        { "time": "3d", "battery": 71, "voltage": 12.9 },
+        { "time": "2d", "battery": 72, "voltage": 13.0 },
+        { "time": "1d", "battery": 75, "voltage": 13.1 },
+        { "time": "0d", "battery": 77, "voltage": 13.2 }
+      ],
+      "faultTrends": [{ "name": "Fuel System", "percentage": 40 }],
+      "recentAlerts": [{ "level": "Medium", "message": "Fuel mixture irregularity" }],
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "37%",
+        "predictedNextFaultType": "Fuel System",
+        "confidenceScore": "81%"
+      }
+    },
+    {
+      "id": "MKV-201",
+      "name": "MK V Special Operations Craft",
+      "modelName": "MK-V",
+      "status": "READY",
+      "color": "ready",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
+      "assetOverview": {
+        "status": "Operational",
+        "base": "NSW Legacy Craft Facility",
+        "engineHours": 1670,
+        "missionsCompleted": 412,
+        "lastMaintenance": "2025-08-18",
+        "nextMaintenanceDue": "2025-12-10",
+        "firmwareVersion": "v5.9.2"
+      },
+      "overallHealth": {
+        "percentage": 87,
+        "score": 87,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "87%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 54, "voltage": 13.1 },
+        { "time": "5d", "battery": 56, "voltage": 13.2 },
+        { "time": "4d", "battery": 58, "voltage": 13.3 },
+        { "time": "3d", "battery": 59, "voltage": 13.4 },
+        { "time": "2d", "battery": 61, "voltage": 13.4 },
+        { "time": "1d", "battery": 60, "voltage": 13.3 },
+        { "time": "0d", "battery": 59, "voltage": 13.3 }
+      ],
+      "faultTrends": [],
+      "recentAlerts": [],
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "72%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "99%"
+      }
+    },
+    {
+      "id": "PB-90-101",
+      "name": "Patrol Boat PB-90",
+      "modelName": "PB-90",
+      "status": "READY",
+      "color": "ready",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
+      "assetOverview": {
+        "status": "Operational",
+        "base": "Coastal Patrol Station-1",
+        "engineHours": 770,
+        "missionsCompleted": 198,
+        "lastMaintenance": "2025-09-19",
+        "nextMaintenanceDue": "2025-12-20",
+        "firmwareVersion": "v3.2.4"
+      },
+      "overallHealth": {
+        "percentage": 90,
+        "score": 90,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "90%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 58, "voltage": 13.0 },
+        { "time": "5d", "battery": 59, "voltage": 13.1 },
+        { "time": "4d", "battery": 60, "voltage": 13.2 },
+        { "time": "3d", "battery": 59, "voltage": 13.1 },
+        { "time": "2d", "battery": 61, "voltage": 13.2 },
+        { "time": "1d", "battery": 62, "voltage": 13.3 },
+        { "time": "0d", "battery": 61, "voltage": 13.2 }
+      ],
+      "faultTrends": [],
+      "recentAlerts": [],
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "81%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "97%"
+      }
+    },
+    {
+      "id": "PB-90-114",
+      "name": "Patrol Boat PB-90",
+      "modelName": "PB-90",
+      "status": "AT-RISK",
+      "color": "warning",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
+      "assetOverview": {
+        "status": "At Risk",
+        "base": "Coastal Patrol Station-1",
+        "engineHours": 842,
+        "missionsCompleted": 211,
+        "lastMaintenance": "2025-06-14",
+        "nextMaintenanceDue": "2025-09-30",
+        "firmwareVersion": "v3.2.1"
+      },
+      "overallHealth": {
+        "percentage": 61,
+        "score": 61,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "61%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 64, "voltage": 12.7 },
+        { "time": "5d", "battery": 66, "voltage": 12.8 },
+        { "time": "4d", "battery": 67, "voltage": 12.9 },
+        { "time": "3d", "battery": 68, "voltage": 12.9 },
+        { "time": "2d", "battery": 69, "voltage": 13.0 },
+        { "time": "1d", "battery": 70, "voltage": 13.1 },
+        { "time": "0d", "battery": 71, "voltage": 13.2 }
+      ],
+      "faultTrends": [],
+      "recentAlerts": [{ "level": "Medium", "message": "Navigation drift under heavy sea state" }],
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "48%",
+        "predictedNextFaultType": "Navigation System",
+        "confidenceScore": "74%"
+      }
+    }
+  ]
+}
