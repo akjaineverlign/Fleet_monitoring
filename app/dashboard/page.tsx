@@ -112,10 +112,9 @@ export default function Dashboard() {
         <div className="border-b border-slate-800 bg-gradient-to-b from-slate-900/50 to-transparent p-6">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-3xl font-bold text-white mb-1">Asset Fleets & Readiness</h1>
+              <h1 className="text-3xl font-bold text-white mb-1">Fleet Readiness & Operations</h1>
               <p className="text-sm text-gray-400">
-                Consolidated readiness view across MQ-9 Reaper, RQ-4 Global Hawk, MQ-1 Predator, XQ-58 Valkyrie, RQ-11
-                Raven Assets and support equipment
+                Consolidated readiness view across all assets, bases, and operational environments
               </p>
             </div>
             <div className="flex items-center gap-3">

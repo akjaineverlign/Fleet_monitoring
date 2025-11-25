@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'SignalIQ Drone Fleet Monitor',
-  description: 'Real-time drone fleet monitoring and management',
+  title: 'SignalIQ Fleet Monitor',
+  description: 'Real-time fleet monitoring and management',
   generator: 'v0.app',
   icons: {
     icon: [

@@ -220,7 +220,7 @@ export function FleetMap() {
           <div className="text-xs text-gray-500 mt-1">Operational</div>
         </div>
         <div className="bg-slate-800/30 border border-slate-700/50 rounded-lg p-4 hover:bg-slate-800/40 transition-colors">
-          <div className="text-xs text-gray-400 mb-2 font-semibold">Total Drones</div>
+          <div className="text-xs text-gray-400 mb-2 font-semibold">Total Assets</div>
           <div className="text-2xl font-bold text-cyan-400">{totalDrones}</div>
           <div className="text-xs text-gray-500 mt-1">Fleet-wide</div>
         </div>

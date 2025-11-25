@@ -52,7 +52,7 @@ export default function Home() {
     return <div className="flex items-center justify-center h-screen">Loading...</div>
   }
 
-  const pageTitle = `${assetType.charAt(0).toUpperCase() + assetType.slice(1)} Fleet Monitor`
+  const pageTitle = `Fleet Operations Command Center`
 
   return (
     <div className="flex h-screen bg-slate-950">
@@ -137,7 +137,7 @@ export default function Home() {
         <div className="p-6">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-white">
-              {assetType.charAt(0).toUpperCase() + assetType.slice(1)} Fleet Status
+              Fleet Readiness Overview
             </h2>
             <div className="flex items-center gap-3">
               <input
