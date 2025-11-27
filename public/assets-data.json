@@ -2,654 +2,434 @@
   "assetType": "boat",
   "assets": [
     {
-      "id": 1,
-      "name": "AS-401",
-      "modelName": "Patrol Craft",
+      "id": "CCM-851",
+      "name": "Combatant Craft Medium",
+      "modelName": "CCM",
       "status": "READY",
       "color": "ready",
-      "lastUpdated": "2025-10-25",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
       "assetOverview": {
-        "base": "OPLOC-1",
-        "engineHours": 186.2,
-        "missionsCompleted": 27,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-10-20",
-        "nextMaintenanceDue": "2025-12-18"
+        "status": "Operational",
+        "base": "NSW Base-1",
+        "engineHours": 812.5,
+        "missionsCompleted": 122,
+        "lastMaintenance": "2025-07-10",
+        "nextMaintenanceDue": "2025-11-20",
+        "firmwareVersion": "v3.8.1"
       },
-      "overallHealth": 92,
-      "batteryTrend": [94, 93, 92, 91, 90, 92, 93],
-      "faultTrends": {
-        "propulsion": 91,
-        "electrical": 94,
-        "hydraulic": 89,
-        "hull": 92
+      "overallHealth": {
+        "percentage": 92,
+        "score": 92,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "92%"
       },
-      "recentAlerts": ["Electrical load spike detected", "Minor vibration irregularity"],
+      "batteryTrend": [
+        { "time": "6d", "battery": 85, "voltage": 12.8 },
+        { "time": "5d", "battery": 84, "voltage": 12.7 },
+        { "time": "4d", "battery": 86, "voltage": 12.9 },
+        { "time": "3d", "battery": 88, "voltage": 13.0 },
+        { "time": "2d", "battery": 89, "voltage": 13.1 },
+        { "time": "1d", "battery": 90, "voltage": 13.2 },
+        { "time": "0d", "battery": 92, "voltage": 13.2 }
+      ],
+      "faultTrends": [{ "name": "Port Engine", "percentage": 90 }, { "name": "Electrical Bus", "percentage": 91 }],
+      "recentAlerts": [],
       "maintenanceHistory": [
-        { "date": "2025-10-20", "details": "Unit-level inspection completed" },
-        { "date": "2025-08-11", "details": "Propulsion alignment check" }
+        {
+          "caseId": "FB001-0001",
+          "faultCode": "FP-PRP-002",
+          "component": "Propulsion System",
+          "failureMode": "Propeller vibration...",
+          "dateReported": "2025-10-09",
+          "technician": "ENG-S0-01",
+          "riskScore": "High",
+          "status": "Closed"
+        }
       ],
       "recentFlightLogs": [
-        { "date": "2025-10-21", "duration": "2.1 hrs", "notes": "Patrol Operation" }
+        {
+          "date": "2025-10-12 • 45m",
+          "duration": "Max Alt: 120m • Dist: 12km • Avg Speed: 18km/h",
+          "details": ""
+        }
       ],
-      "predictiveInsights": ["Propulsion performance stable", "No degradation detected"]
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "82%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "95%"
+      }
     },
     {
-      "id": 2,
-      "name": "AS-402",
-      "modelName": "Combatant Craft",
+      "id": "CCM-867",
+      "name": "Combatant Craft Medium",
+      "modelName": "CCM",
       "status": "AT-RISK",
       "color": "warning",
-      "lastUpdated": "2025-10-25",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
       "assetOverview": {
-        "base": "OPLOC-1",
-        "engineHours": 243.7,
-        "missionsCompleted": 33,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-09-15",
-        "nextMaintenanceDue": "2025-11-10"
+        "status": "At Risk",
+        "base": "NSW Base-2",
+        "engineHours": 943.2,
+        "missionsCompleted": 147,
+        "lastMaintenance": "2025-06-20",
+        "nextMaintenanceDue": "2025-10-28",
+        "firmwareVersion": "v3.9.2"
       },
-      "overallHealth": 63,
-      "batteryTrend": [72, 70, 68, 67, 66, 65, 64],
-      "faultTrends": {
-        "propulsion": 58,
-        "electrical": 61,
-        "hydraulic": 69,
-        "hull": 65
+      "overallHealth": {
+        "percentage": 62,
+        "score": 62,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "62%"
       },
-      "recentAlerts": ["Hydraulic pressure fluctuation detected"],
-      "maintenanceHistory": [
-        { "date": "2025-09-15", "details": "Electrical rewiring performed" }
+      "batteryTrend": [
+        { "time": "6d", "battery": 72, "voltage": 12.4 },
+        { "time": "5d", "battery": 75, "voltage": 12.5 },
+        { "time": "4d", "battery": 76, "voltage": 12.6 },
+        { "time": "3d", "battery": 78, "voltage": 12.7 },
+        { "time": "2d", "battery": 80, "voltage": 12.8 },
+        { "time": "1d", "battery": 81, "voltage": 12.9 },
+        { "time": "0d", "battery": 83, "voltage": 13.0 }
       ],
-      "recentFlightLogs": [
-        { "date": "2025-10-17", "duration": "3.3 hrs", "notes": "Training Operation" }
-      ],
-      "predictiveInsights": ["Rising hydraulic deviation indicates early-stage wear"]
+      "faultTrends": [{ "name": "Port Engine", "percentage": 40 }, { "name": "Hydraulics", "percentage": 35 }],
+      "recentAlerts": [{ "level": "Medium", "message": "Hydraulic pressure fluctuation detected" }],
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "41%",
+        "predictedNextFaultType": "Hydraulics",
+        "confidenceScore": "78%"
+      }
     },
     {
-      "id": 3,
-      "name": "AS-403",
-      "modelName": "Riverine Craft",
-      "status": "READY",
-      "color": "ready",
-      "lastUpdated": "2025-10-24",
-      "assetOverview": {
-        "base": "OPLOC-2",
-        "engineHours": 112.9,
-        "missionsCompleted": 18,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-10-10",
-        "nextMaintenanceDue": "2025-12-05"
-      },
-      "overallHealth": 88,
-      "batteryTrend": [91, 90, 90, 89, 88, 89, 90],
-      "faultTrends": {
-        "propulsion": 86,
-        "electrical": 90,
-        "hydraulic": 84,
-        "hull": 89
-      },
-      "recentAlerts": ["None"],
-      "maintenanceHistory": [
-        { "date": "2025-10-10", "details": "Hull inspection completed" }
-      ],
-      "recentFlightLogs": [
-        { "date": "2025-10-18", "duration": "1.8 hrs", "notes": "Riverine Patrol" }
-      ],
-      "predictiveInsights": ["Healthy operating patterns observed"]
-    },
-    {
-      "id": 4,
-      "name": "AS-404",
-      "modelName": "High-Speed Interceptor",
+      "id": "CCA-432",
+      "name": "Combatant Craft Assault",
+      "modelName": "CCA",
       "status": "CRITICAL",
       "color": "critical",
-      "lastUpdated": "2025-10-22",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
       "assetOverview": {
-        "base": "OPLOC-3",
-        "engineHours": 331.4,
-        "missionsCompleted": 41,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-08-02",
-        "nextMaintenanceDue": "2025-10-01"
-      },
-      "overallHealth": 29,
-      "batteryTrend": [34, 33, 32, 31, 30, 29, 28],
-      "faultTrends": {
-        "propulsion": 22,
-        "electrical": 33,
-        "hydraulic": 31,
-        "hull": 28
-      },
-      "recentAlerts": [
-        "Severe propulsion degradation",
-        "Hull stress outside safe band"
-      ],
-      "maintenanceHistory": [
-        { "date": "2025-08-02", "details": "Deep maintenance overdue" }
-      ],
-      "recentFlightLogs": [
-        { "date": "2025-10-11", "duration": "3.9 hrs", "notes": "High-speed Interception Drill" }
-      ],
-      "predictiveInsights": ["Critical propulsion anomaly—recommended grounding"]
-    },
-    {
-      "id": 5,
-      "name": "AS-405",
-      "modelName": "Support Craft",
-      "status": "READY",
-      "color": "ready",
-      "lastUpdated": "2025-10-25",
-      "assetOverview": {
-        "base": "OPLOC-2",
-        "engineHours": 154.0,
-        "missionsCompleted": 22,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-10-01",
-        "nextMaintenanceDue": "2025-12-20"
-      },
-      "overallHealth": 90,
-      "batteryTrend": [93, 92, 91, 90, 91, 92, 93],
-      "faultTrends": {
-        "propulsion": 88,
-        "electrical": 91,
-        "hydraulic": 92,
-        "hull": 89
-      },
-      "recentAlerts": [],
-      "maintenanceHistory": [
-        { "date": "2025-10-01", "details": "Electrical diagnostics completed" }
-      ],
-      "recentFlightLogs": [
-        { "date": "2025-10-14", "duration": "1.5 hrs", "notes": "Harbor Support Run" }
-      ],
-      "predictiveInsights": ["Stable craft with no emerging degradation"]
-    },
-    {
-      "id": 6,
-      "name": "AS-406",
-      "modelName": "Patrol Craft",
-      "status": "AT-RISK",
-      "color": "warning",
-      "lastUpdated": "2025-10-23",
-      "assetOverview": {
-        "base": "OPLOC-3",
-        "engineHours": 209.3,
-        "missionsCompleted": 30,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-09-10",
-        "nextMaintenanceDue": "2025-11-25"
-      },
-      "overallHealth": 57,
-      "batteryTrend": [64, 63, 62, 61, 60, 59, 58],
-      "faultTrends": {
-        "propulsion": 51,
-        "electrical": 60,
-        "hydraulic": 59,
-        "hull": 58
-      },
-      "recentAlerts": ["Propulsion temperature variance detected"],
-      "maintenanceHistory": [
-        { "date": "2025-09-10", "details": "Cooling system flush performed" }
-      ],
-      "recentFlightLogs": [
-        { "date": "2025-10-19", "duration": "3.0 hrs", "notes": "Patrol Operation" }
-      ],
-      "predictiveInsights": ["Propulsion behaving outside expected baseline"]
-    },
-    {
-      "id": 7,
-      "name": "AS-407",
-      "modelName": "Combatant Craft",
-      "status": "READY",
-      "color": "ready",
-      "lastUpdated": "2025-10-24",
-      "assetOverview": {
-        "base": "OPLOC-1",
-        "engineHours": 178.6,
-        "missionsCompleted": 24,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-09-28",
-        "nextMaintenanceDue": "2025-12-10"
-      },
-      "overallHealth": 85,
-      "batteryTrend": [88, 87, 86, 85, 85, 86, 87],
-      "faultTrends": {
-        "propulsion": 83,
-        "electrical": 87,
-        "hydraulic": 82,
-        "hull": 86
-      },
-      "recentAlerts": [],
-      "maintenanceHistory": [
-        { "date": "2025-09-28", "details": "Routine tune-up completed" }
-      ],
-      "recentFlightLogs": [
-        { "date": "2025-10-20", "duration": "2.4 hrs", "notes": "Security Escort Operation" }
-      ],
-      "predictiveInsights": ["Healthy across all subsystems"]
-    },
-    {
-      "id": 8,
-      "name": "AS-408",
-      "modelName": "High-Speed Interceptor",
-      "status": "READY",
-      "color": "ready",
-      "lastUpdated": "2025-10-25",
-      "assetOverview": {
-        "base": "OPLOC-3",
-        "engineHours": 129.4,
-        "missionsCompleted": 19,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-10-05",
-        "nextMaintenanceDue": "2025-12-15"
-      },
-      "overallHealth": 93,
-      "batteryTrend": [95, 94, 94, 93, 93, 94, 95],
-      "faultTrends": {
-        "propulsion": 95,
-        "electrical": 91,
-        "hydraulic": 92,
-        "hull": 94
-      },
-      "recentAlerts": ["None"],
-      "maintenanceHistory": [
-        { "date": "2025-10-05", "details": "Propulsion intake cleaned" }
-      ],
-      "recentFlightLogs": [
-        { "date": "2025-10-18", "duration": "1.6 hrs", "notes": "High-Speed Transit" }
-      ],
-      "predictiveInsights": ["Excellent subsystem performance"]
-    },
-    {
-      "id": 9,
-      "name": "AS-409",
-      "modelName": "Riverine Craft",
-      "status": "AT-RISK",
-      "color": "warning",
-      "lastUpdated": "2025-10-24",
-      "assetOverview": {
-        "base": "OPLOC-1",
-        "engineHours": 221.5,
-        "missionsCompleted": 28,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-09-01",
-        "nextMaintenanceDue": "2025-11-05"
-      },
-      "overallHealth": 61,
-      "batteryTrend": [68, 67, 65, 64, 63, 63, 62],
-      "faultTrends": {
-        "propulsion": 57,
-        "electrical": 62,
-        "hydraulic": 64,
-        "hull": 59
-      },
-      "recentAlerts": ["Minor hull vibration anomaly"],
-      "maintenanceHistory": [
-        { "date": "2025-09-01", "details": "Hull welds inspected" }
-      ],
-      "recentFlightLogs": [
-        { "date": "2025-10-17", "duration": "2.9 hrs", "notes": "Riverine Security Patrol" }
-      ],
-      "predictiveInsights": ["Hull trend deviation warrants monitoring"]
-    },
-    {
-      "id": 10,
-      "name": "AS-410",
-      "modelName": "Support Craft",
-      "status": "READY",
-      "color": "ready",
-      "lastUpdated": "2025-10-25",
-      "assetOverview": {
-        "base": "OPLOC-2",
-        "engineHours": 102.8,
-        "missionsCompleted": 15,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-10-12",
-        "nextMaintenanceDue": "2025-12-09"
-      },
-      "overallHealth": 94,
-      "batteryTrend": [96, 95, 95, 94, 94, 95, 96],
-      "faultTrends": {
-        "propulsion": 92,
-        "electrical": 95,
-        "hydraulic": 93,
-        "hull": 96
-      },
-      "recentAlerts": [],
-      "maintenanceHistory": [
-        { "date": "2025-10-12", "details": "Electrical load test" }
-      ],
-      "recentFlightLogs": [
-        { "date": "2025-10-19", "duration": "1.2 hrs", "notes": "Harbor Movement Operation" }
-      ],
-      "predictiveInsights": ["Excellent health across subsystems"]
-    },
-    {
-      "id": 11,
-      "name": "AS-411",
-      "modelName": "Patrol Craft",
-      "status": "READY",
-      "color": "ready",
-      "lastUpdated": "2025-10-24",
-      "assetOverview": {
-        "base": "OPLOC-3",
-        "engineHours": 168.2,
-        "missionsCompleted": 23,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-10-03",
-        "nextMaintenanceDue": "2025-12-22"
-      },
-      "overallHealth": 89,
-      "batteryTrend": [91, 90, 89, 89, 90, 91, 92],
-      "faultTrends": {
-        "propulsion": 87,
-        "electrical": 90,
-        "hydraulic": 86,
-        "hull": 88
-      },
-      "recentAlerts": [],
-      "maintenanceHistory": [
-        { "date": "2025-10-03", "details": "Routine unit-level service" }
-      ],
-      "recentFlightLogs": [
-        { "date": "2025-10-18", "duration": "2.2 hrs", "notes": "Coastal Defense Patrol" }
-      ],
-      "predictiveInsights": ["Subsystems performing nominally"]
-    },
-    {
-      "id": 12,
-      "name": "AS-412",
-      "modelName": "Combatant Craft",
-      "status": "AT-RISK",
-      "color": "warning",
-      "lastUpdated": "2025-10-23",
-      "assetOverview": {
-        "base": "OPLOC-2",
-        "engineHours": 251.7,
-        "missionsCompleted": 34,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-08-25",
-        "nextMaintenanceDue": "2025-11-01"
-      },
-      "overallHealth": 54,
-      "batteryTrend": [60, 59, 58, 57, 56, 55, 54],
-      "faultTrends": {
-        "propulsion": 50,
-        "electrical": 52,
-        "hydraulic": 56,
-        "hull": 58
-      },
-      "recentAlerts": ["Fuel line pressure irregularity"],
-      "maintenanceHistory": [
-        { "date": "2025-08-25", "details": "Cooling system flushed" }
-      ],
-      "recentFlightLogs": [
-        { "date": "2025-10-17", "duration": "3.8 hrs", "notes": "Training Operation" }
-      ],
-      "predictiveInsights": ["Propulsion and hydraulic trends showing downward drift"]
-    },
-    {
-      "id": 13,
-      "name": "AS-413",
-      "modelName": "High-Speed Interceptor",
-      "status": "CRITICAL",
-      "color": "critical",
-      "lastUpdated": "2025-10-22",
-      "assetOverview": {
-        "base": "OPLOC-1",
-        "engineHours": 312.8,
-        "missionsCompleted": 39,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-08-10",
-        "nextMaintenanceDue": "2025-09-30"
-      },
-      "overallHealth": 26,
-      "batteryTrend": [33, 32, 31, 30, 29, 28, 27],
-      "faultTrends": {
-        "propulsion": 21,
-        "electrical": 28,
-        "hydraulic": 33,
-        "hull": 24
-      },
-      "recentAlerts": [
-        "Propulsion output below safe threshold",
-        "Electrical instability detected"
-      ],
-      "maintenanceHistory": [
-        { "date": "2025-08-10", "details": "Major overhaul overdue" }
-      ],
-      "recentFlightLogs": [
-        { "date": "2025-10-12", "duration": "4.0 hrs", "notes": "Maritime Chase Scenario" }
-      ],
-      "predictiveInsights": ["Immediate maintenance intervention required"]
-    },
-    {
-      "id": 14,
-      "name": "AS-414",
-      "modelName": "Riverine Craft",
-      "status": "READY",
-      "color": "ready",
-      "lastUpdated": "2025-10-25",
-      "assetOverview": {
-        "base": "OPLOC-3",
-        "engineHours": 98.5,
-        "missionsCompleted": 14,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-10-15",
-        "nextMaintenanceDue": "2025-12-25"
-      },
-      "overallHealth": 91,
-      "batteryTrend": [94, 94, 93, 92, 93, 94, 95],
-      "faultTrends": {
-        "propulsion": 89,
-        "electrical": 92,
-        "hydraulic": 90,
-        "hull": 93
-      },
-      "recentAlerts": [],
-      "maintenanceHistory": [
-        { "date": "2025-10-15", "details": "Hull reinforcement check" }
-      ],
-      "recentFlightLogs": [
-        { "date": "2025-10-20", "duration": "1.7 hrs", "notes": "Riverine Sweep Operation" }
-      ],
-      "predictiveInsights": ["Healthy subsystem performance"]
-    },
-    {
-      "id": 15,
-      "name": "AS-415",
-      "modelName": "Support Craft",
-      "status": "AT-RISK",
-      "color": "warning",
-      "lastUpdated": "2025-10-23",
-      "assetOverview": {
-        "base": "OPLOC-2",
-        "engineHours": 236.4,
-        "missionsCompleted": 29,
-        "firmwareVersion": "N/A",
+        "status": "Critical",
+        "base": "NSW Base-3",
+        "engineHours": 1021,
+        "missionsCompleted": 163,
         "lastMaintenance": "2025-09-20",
-        "nextMaintenanceDue": "2025-11-18"
+        "nextMaintenanceDue": "2025-11-15",
+        "firmwareVersion": "v4.1.2"
       },
-      "overallHealth": 60,
-      "batteryTrend": [66, 64, 63, 62, 61, 60, 59],
-      "faultTrends": {
-        "propulsion": 55,
-        "electrical": 61,
-        "hydraulic": 62,
-        "hull": 59
+      "overallHealth": {
+        "percentage": 18,
+        "score": 18,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "18%"
       },
-      "recentAlerts": ["Hydraulic pump load rising"],
-      "maintenanceHistory": [
-        { "date": "2025-09-20", "details": "Internal electrical inspection" }
+      "batteryTrend": [
+        { "time": "6d", "battery": 88, "voltage": 11.9 },
+        { "time": "5d", "battery": 90, "voltage": 12.0 },
+        { "time": "4d", "battery": 93, "voltage": 12.1 },
+        { "time": "3d", "battery": 95, "voltage": 12.2 },
+        { "time": "2d", "battery": 97, "voltage": 12.3 },
+        { "time": "1d", "battery": 98, "voltage": 12.4 },
+        { "time": "0d", "battery": 99, "voltage": 12.5 }
       ],
-      "recentFlightLogs": [
-        { "date": "2025-10-16", "duration": "2.8 hrs", "notes": "Logistics Support Run" }
-      ],
-      "predictiveInsights": ["Hydraulic variance increasing over missions"]
-    },
-    {
-      "id": 16,
-      "name": "AS-416",
-      "modelName": "Patrol Craft",
-      "status": "READY",
-      "color": "ready",
-      "lastUpdated": "2025-10-24",
-      "assetOverview": {
-        "base": "OPLOC-1",
-        "engineHours": 141.1,
-        "missionsCompleted": 20,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-10-08",
-        "nextMaintenanceDue": "2025-12-17"
-      },
-      "overallHealth": 87,
-      "batteryTrend": [89, 88, 87, 87, 88, 89, 90],
-      "faultTrends": {
-        "propulsion": 85,
-        "electrical": 89,
-        "hydraulic": 84,
-        "hull": 88
-      },
-      "recentAlerts": [],
-      "maintenanceHistory": [
-        { "date": "2025-10-08", "details": "Propulsion lubrication service" }
-      ],
-      "recentFlightLogs": [
-        { "date": "2025-10-19", "duration": "2.0 hrs", "notes": "Patrol Operation" }
-      ],
-      "predictiveInsights": ["All systems functioning within healthy limits"]
-    },
-    {
-      "id": 17,
-      "name": "AS-417",
-      "modelName": "Combatant Craft",
-      "status": "CRITICAL",
-      "color": "critical",
-      "lastUpdated": "2025-10-22",
-      "assetOverview": {
-        "base": "OPLOC-3",
-        "engineHours": 295.0,
-        "missionsCompleted": 38,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-08-01",
-        "nextMaintenanceDue": "2025-09-20"
-      },
-      "overallHealth": 33,
-      "batteryTrend": [37, 36, 35, 34, 33, 32, 31],
-      "faultTrends": {
-        "propulsion": 29,
-        "electrical": 31,
-        "hydraulic": 36,
-        "hull": 34
-      },
+      "faultTrends": [{ "name": "Port Engine", "percentage": 22 }, { "name": "Electrical Bus", "percentage": 14 }],
       "recentAlerts": [
-        "Electrical deviation above threshold",
-        "Structural resonance detected"
+        { "level": "High", "message": "Severe engine vibration detected" },
+        { "level": "High", "message": "Electrical bus instability" }
       ],
-      "maintenanceHistory": [
-        { "date": "2025-08-01", "details": "Propulsion overhaul overdue" }
-      ],
-      "recentFlightLogs": [
-        { "date": "2025-10-10", "duration": "4.3 hrs", "notes": "Boarding Simulation" }
-      ],
-      "predictiveInsights": ["Forecasted electrical-system failure within 2 missions"]
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "6%",
+        "predictedNextFaultType": "Engine Failure",
+        "confidenceScore": "92%"
+      }
     },
     {
-      "id": 18,
-      "name": "AS-418",
-      "modelName": "Riverine Craft",
+      "id": "CCA-448",
+      "name": "Combatant Craft Assault",
+      "modelName": "CCA",
       "status": "READY",
       "color": "ready",
-      "lastUpdated": "2025-10-25",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
       "assetOverview": {
-        "base": "OPLOC-2",
-        "engineHours": 121.9,
-        "missionsCompleted": 17,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-10-11",
-        "nextMaintenanceDue": "2025-12-16"
+        "status": "Operational",
+        "base": "NSW Base-1",
+        "engineHours": 622,
+        "missionsCompleted": 89,
+        "lastMaintenance": "2025-07-02",
+        "nextMaintenanceDue": "2025-11-05",
+        "firmwareVersion": "v4.0.0"
       },
-      "overallHealth": 90,
-      "batteryTrend": [92, 91, 90, 90, 91, 92, 93],
-      "faultTrends": {
-        "propulsion": 88,
-        "electrical": 92,
-        "hydraulic": 91,
-        "hull": 90
+      "overallHealth": {
+        "percentage": 95,
+        "score": 95,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "95%"
       },
+      "batteryTrend": [
+        { "time": "6d", "battery": 61, "voltage": 13.0 },
+        { "time": "5d", "battery": 62, "voltage": 13.1 },
+        { "time": "4d", "battery": 64, "voltage": 13.2 },
+        { "time": "3d", "battery": 63, "voltage": 13.1 },
+        { "time": "2d", "battery": 65, "voltage": 13.2 },
+        { "time": "1d", "battery": 66, "voltage": 13.3 },
+        { "time": "0d", "battery": 65, "voltage": 13.2 }
+      ],
+      "faultTrends": [],
       "recentAlerts": [],
-      "maintenanceHistory": [
-        { "date": "2025-10-11", "details": "Navigation system recalibration" }
-      ],
-      "recentFlightLogs": [
-        { "date": "2025-10-17", "duration": "1.5 hrs", "notes": "Covert River Patrol" }
-      ],
-      "predictiveInsights": ["Stable health across all subsystems"]
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "89%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "98%"
+      }
     },
     {
-      "id": 19,
-      "name": "AS-419",
-      "modelName": "Support Craft",
+      "id": "CCH-901",
+      "name": "Combatant Craft Heavy",
+      "modelName": "CCH",
+      "status": "READY",
+      "color": "ready",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
+      "assetOverview": {
+        "status": "Operational",
+        "base": "NSW Heavy Ops Base",
+        "engineHours": 1543,
+        "missionsCompleted": 310,
+        "lastMaintenance": "2025-08-11",
+        "nextMaintenanceDue": "2025-11-30",
+        "firmwareVersion": "v5.2.1"
+      },
+      "overallHealth": {
+        "percentage": 88,
+        "score": 88,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "88%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 49, "voltage": 13.2 },
+        { "time": "5d", "battery": 50, "voltage": 13.2 },
+        { "time": "4d", "battery": 52, "voltage": 13.3 },
+        { "time": "3d", "battery": 54, "voltage": 13.4 },
+        { "time": "2d", "battery": 53, "voltage": 13.3 },
+        { "time": "1d", "battery": 55, "voltage": 13.4 },
+        { "time": "0d", "battery": 54, "voltage": 13.3 }
+      ],
+      "faultTrends": [],
+      "recentAlerts": [],
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "78%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "96%"
+      }
+    },
+    {
+      "id": "RHIB-1107",
+      "name": "11m Rigid Hull Inflatable Boat",
+      "modelName": "RHIB-11M",
+      "status": "READY",
+      "color": "ready",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
+      "assetOverview": {
+        "status": "Operational",
+        "base": "NSW Base-5",
+        "engineHours": 410,
+        "missionsCompleted": 72,
+        "lastMaintenance": "2025-07-30",
+        "nextMaintenanceDue": "2025-10-29",
+        "firmwareVersion": "v2.4.8"
+      },
+      "overallHealth": {
+        "percentage": 91,
+        "score": 91,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "91%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 48, "voltage": 13.1 },
+        { "time": "5d", "battery": 49, "voltage": 13.2 },
+        { "time": "4d", "battery": 50, "voltage": 13.2 },
+        { "time": "3d", "battery": 49, "voltage": 13.1 },
+        { "time": "2d", "battery": 51, "voltage": 13.2 },
+        { "time": "1d", "battery": 52, "voltage": 13.3 },
+        { "time": "0d", "battery": 53, "voltage": 13.3 }
+      ],
+      "faultTrends": [],
+      "recentAlerts": [],
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "83%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "97%"
+      }
+    },
+    {
+      "id": "RHIB-1109",
+      "name": "11m Rigid Hull Inflatable Boat",
+      "modelName": "RHIB-11M",
       "status": "AT-RISK",
       "color": "warning",
-      "lastUpdated": "2025-10-23",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
       "assetOverview": {
-        "base": "OPLOC-1",
-        "engineHours": 212.3,
-        "missionsCompleted": 26,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-09-05",
-        "nextMaintenanceDue": "2025-11-12"
+        "status": "At Risk",
+        "base": "NSW Base-5",
+        "engineHours": 530,
+        "missionsCompleted": 90,
+        "lastMaintenance": "2025-06-25",
+        "nextMaintenanceDue": "2025-10-11",
+        "firmwareVersion": "v2.4.7"
       },
-      "overallHealth": 58,
-      "batteryTrend": [63, 62, 61, 60, 59, 58, 57],
-      "faultTrends": {
-        "propulsion": 53,
-        "electrical": 59,
-        "hydraulic": 57,
-        "hull": 58
+      "overallHealth": {
+        "percentage": 59,
+        "score": 59,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "59%"
       },
-      "recentAlerts": ["Hydraulic performance drifting downward"],
-      "maintenanceHistory": [
-        { "date": "2025-09-05", "details": "Hull inspection performed" }
+      "batteryTrend": [
+        { "time": "6d", "battery": 65, "voltage": 12.6 },
+        { "time": "5d", "battery": 67, "voltage": 12.7 },
+        { "time": "4d", "battery": 69, "voltage": 12.8 },
+        { "time": "3d", "battery": 71, "voltage": 12.9 },
+        { "time": "2d", "battery": 72, "voltage": 13.0 },
+        { "time": "1d", "battery": 75, "voltage": 13.1 },
+        { "time": "0d", "battery": 77, "voltage": 13.2 }
       ],
-      "recentFlightLogs": [
-        { "date": "2025-10-18", "duration": "3.0 hrs", "notes": "Support Movement" }
-      ],
-      "predictiveInsights": ["Hydraulic subsystem should be inspected next cycle"]
+      "faultTrends": [{ "name": "Fuel System", "percentage": 40 }],
+      "recentAlerts": [{ "level": "Medium", "message": "Fuel mixture irregularity" }],
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "37%",
+        "predictedNextFaultType": "Fuel System",
+        "confidenceScore": "81%"
+      }
     },
     {
-      "id": 20,
-      "name": "AS-420",
-      "modelName": "High-Speed Interceptor",
+      "id": "MKV-201",
+      "name": "MK V Special Operations Craft",
+      "modelName": "MK-V",
       "status": "READY",
       "color": "ready",
-      "lastUpdated": "2025-10-25",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
       "assetOverview": {
-        "base": "OPLOC-3",
-        "engineHours": 139.2,
-        "missionsCompleted": 18,
-        "firmwareVersion": "N/A",
-        "lastMaintenance": "2025-10-06",
-        "nextMaintenanceDue": "2025-12-19"
+        "status": "Operational",
+        "base": "NSW Legacy Craft Facility",
+        "engineHours": 1670,
+        "missionsCompleted": 412,
+        "lastMaintenance": "2025-08-18",
+        "nextMaintenanceDue": "2025-12-10",
+        "firmwareVersion": "v5.9.2"
       },
-      "overallHealth": 92,
-      "batteryTrend": [94, 93, 93, 92, 92, 93, 94],
-      "faultTrends": {
-        "propulsion": 90,
-        "electrical": 93,
-        "hydraulic": 91,
-        "hull": 94
+      "overallHealth": {
+        "percentage": 87,
+        "score": 87,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "87%"
       },
+      "batteryTrend": [
+        { "time": "6d", "battery": 54, "voltage": 13.1 },
+        { "time": "5d", "battery": 56, "voltage": 13.2 },
+        { "time": "4d", "battery": 58, "voltage": 13.3 },
+        { "time": "3d", "battery": 59, "voltage": 13.4 },
+        { "time": "2d", "battery": 61, "voltage": 13.4 },
+        { "time": "1d", "battery": 60, "voltage": 13.3 },
+        { "time": "0d", "battery": 59, "voltage": 13.3 }
+      ],
+      "faultTrends": [],
       "recentAlerts": [],
-      "maintenanceHistory": [
-        { "date": "2025-10-06", "details": "Hydraulic system calibration" }
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "72%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "99%"
+      }
+    },
+    {
+      "id": "PB-90-101",
+      "name": "Patrol Boat PB-90",
+      "modelName": "PB-90",
+      "status": "READY",
+      "color": "ready",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
+      "assetOverview": {
+        "status": "Operational",
+        "base": "Coastal Patrol Station-1",
+        "engineHours": 770,
+        "missionsCompleted": 198,
+        "lastMaintenance": "2025-09-19",
+        "nextMaintenanceDue": "2025-12-20",
+        "firmwareVersion": "v3.2.4"
+      },
+      "overallHealth": {
+        "percentage": 90,
+        "score": 90,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "90%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 58, "voltage": 13.0 },
+        { "time": "5d", "battery": 59, "voltage": 13.1 },
+        { "time": "4d", "battery": 60, "voltage": 13.2 },
+        { "time": "3d", "battery": 59, "voltage": 13.1 },
+        { "time": "2d", "battery": 61, "voltage": 13.2 },
+        { "time": "1d", "battery": 62, "voltage": 13.3 },
+        { "time": "0d", "battery": 61, "voltage": 13.2 }
       ],
-      "recentFlightLogs": [
-        { "date": "2025-10-19", "duration": "1.6 hrs", "notes": "High-Speed Transit" }
+      "faultTrends": [],
+      "recentAlerts": [],
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "81%",
+        "predictedNextFaultType": "None",
+        "confidenceScore": "97%"
+      }
+    },
+    {
+      "id": "PB-90-114",
+      "name": "Patrol Boat PB-90",
+      "modelName": "PB-90",
+      "status": "AT-RISK",
+      "color": "warning",
+      "lastUpdated": "2025-12-22T12:45:32 UTC",
+      "assetOverview": {
+        "status": "At Risk",
+        "base": "Coastal Patrol Station-1",
+        "engineHours": 842,
+        "missionsCompleted": 211,
+        "lastMaintenance": "2025-06-14",
+        "nextMaintenanceDue": "2025-09-30",
+        "firmwareVersion": "v3.2.1"
+      },
+      "overallHealth": {
+        "percentage": 61,
+        "score": 61,
+        "totalScore": 100,
+        "estimatedRemainingFlightLife": "61%"
+      },
+      "batteryTrend": [
+        { "time": "6d", "battery": 64, "voltage": 12.7 },
+        { "time": "5d", "battery": 66, "voltage": 12.8 },
+        { "time": "4d", "battery": 67, "voltage": 12.9 },
+        { "time": "3d", "battery": 68, "voltage": 12.9 },
+        { "time": "2d", "battery": 69, "voltage": 13.0 },
+        { "time": "1d", "battery": 70, "voltage": 13.1 },
+        { "time": "0d", "battery": 71, "voltage": 13.2 }
       ],
-      "predictiveInsights": ["Healthy-state baseline aligns with expected performance"]
+      "faultTrends": [],
+      "recentAlerts": [{ "level": "Medium", "message": "Navigation drift under heavy sea state" }],
+      "maintenanceHistory": [],
+      "recentFlightLogs": [],
+      "predictiveInsights": {
+        "estimatedRemainingFlightLife": "48%",
+        "predictedNextFaultType": "Navigation System",
+        "confidenceScore": "74%"
+      }
     }
   ]
 }
