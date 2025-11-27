@@ -62,27 +62,27 @@ See the screenshot above for the current UI. The app uses the `app/` directory (
 
 1. Clone the repo:
 
-```bash
+\`\`\`bash
 git clone https://github.com/akjaineverlign/Fleet_monitoring.git
 cd Fleet_monitoring
-```
+\`\`\`
 
 2. Install dependencies :
 
 
 If you prefer npm or don't want to install pnpm:
 
-```bash
+\`\`\`bash
 npm install -f
-```
+\`\`\`
 
 3. Run the dev server:
 
-```bash
+\`\`\`bash
 pnpm dev    # or
 npm run dev
 
-```
+\`\`\`
 
 Open `http://localhost:3000` in your browser.
 
@@ -92,16 +92,16 @@ Open `http://localhost:3000` in your browser.
 
 Build for production and preview the production build locally:
 
-```bash
+\`\`\`bash
 pnpm build
 pnpm start    # or `npm run build` && `npm start` depending on scripts
-```
+\`\`\`
 
 If this is a static export project (not required for Next.js App Router), you can run:
 
-```bash
+\`\`\`bash
 pnpm export
-```
+\`\`\`
 
 ---
 
@@ -109,10 +109,10 @@ pnpm export
 
 Place sensitive keys in `.env.local` (this repo already has `.gitignore` entries for `.env*`). Example variables you might add:
 
-```
+\`\`\`
 NEXT_PUBLIC_MAP_API_KEY=your_map_key_here
 NEXT_PUBLIC_API_BASE=https://api.example.com
-```
+\`\`\`
 
 Access these in the app with `process.env.NEXT_PUBLIC_...`.
 
@@ -129,7 +129,7 @@ Access these in the app with `process.env.NEXT_PUBLIC_...`.
 
 ## Repository layout
 
-```
+\`\`\`
 app/                # Next.js app router pages + layout
 components/         # reusable components and UI primitives
 hooks/              # custom React hooks
@@ -141,7 +141,6 @@ package.json
 pnpm-lock.yaml
 tsconfig.json
 next.config.mjs
-```
+\`\`\`
 
 ---
-
