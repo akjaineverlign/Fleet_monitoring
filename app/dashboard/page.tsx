@@ -3,9 +3,9 @@
 import { useState, useEffect } from "react"
 import { Sidebar } from "@/components/sidebar"
 import { ResponsiveContainer, PieChart, Pie, Cell } from "recharts"
-import { FleetMap } from "@/components/fleet-map"
+import { OperationalMap } from "@/components/operational-map"
 
-interface Asset {
+interface Drone {
   id: string
   name: string
   status: string
@@ -27,18 +27,18 @@ interface Asset {
 }
 
 interface DashboardData {
-  assets: Asset[]
+  drones: Drone[]
 }
 
 export default function Dashboard() {
-  const [assets, setAssets] = useState<Asset[]>([])
+  const [drones, setDrones] = useState<Drone[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch("/assets-data.json")
+    fetch("/drones-data.json")
       .then((res) => res.json())
       .then((data: DashboardData) => {
-        setAssets(data.assets)
+        setDrones(data.drones)
         setLoading(false)
       })
       .catch(() => setLoading(false))
@@ -57,10 +57,10 @@ export default function Dashboard() {
   }
 
   // Fleet status breakdown
-  const operational = assets.filter((a) => a.status === "READY").length
-  const maintenance = assets.filter((a) => a.status === "MAINTENANCE").length
-  const critical = assets.filter((a) => ["CRITICAL", "ALERT"].includes(a.status)).length
-  const inactive = assets.filter((a) => ["INACTIVE", "OFFLINE"].includes(a.status)).length
+  const operational = drones.filter((d) => d.status === "READY").length
+  const maintenance = drones.filter((d) => d.status === "MAINTENANCE").length
+  const critical = drones.filter((d) => ["CRITICAL", "ALERT"].includes(d.status)).length
+  const inactive = drones.filter((d) => ["INACTIVE", "OFFLINE"].includes(d.status)).length
 
   const fleetReadinessData = [
     { name: "Operational", value: operational, fill: "#10b981" },
@@ -79,28 +79,28 @@ export default function Dashboard() {
   ]
 
   // Top risk assets
-  const topRiskAssets = assets
-    .filter((a) => a.maintenanceHistory && a.maintenanceHistory.length > 0)
+  const topRiskAssets = drones
+    .filter((d) => d.maintenanceHistory && d.maintenanceHistory.length > 0)
     .slice(0, 8)
-    .map((asset, idx) => ({
-      caseId: asset.maintenanceHistory?.[0]?.caseId || "AFB00" + (idx + 1),
-      tailNumber: asset.id,
-      aircraftType: asset.name,
-      failureMode: asset.maintenanceHistory?.[0]?.failureMode || "Unknown",
-      dateReported: asset.maintenanceHistory?.[0]?.dateReported || "2025-10-09",
-      riskScore: asset.maintenanceHistory?.[0]?.riskScore || "High",
+    .map((drone, idx) => ({
+      caseId: drone.maintenanceHistory?.[0]?.caseId || "AFB00" + (idx + 1),
+      tailNumber: drone.id,
+      aircraftType: drone.name,
+      failureMode: drone.maintenanceHistory?.[0]?.failureMode || "Unknown",
+      dateReported: drone.maintenanceHistory?.[0]?.dateReported || "2025-10-09",
+      riskScore: drone.maintenanceHistory?.[0]?.riskScore || "High",
     }))
 
-  // Recent alerts from assets
-  const recentAlerts = assets
-    .filter((a) => a.recentAlerts && a.recentAlerts.length > 0)
+  // Recent alerts from drones
+  const recentAlerts = drones
+    .filter((d) => d.recentAlerts && d.recentAlerts.length > 0)
     .slice(0, 3)
-    .map((asset, idx) => ({
+    .map((drone, idx) => ({
       id: idx,
-      assetId: asset.id,
+      droneId: drone.id,
       base: "Base-" + (idx + 1),
-      alert: asset.recentAlerts?.[0]?.message || "Unknown alert",
-      level: asset.recentAlerts?.[0]?.level || "Medium",
+      alert: drone.recentAlerts?.[0]?.message || "Unknown alert",
+      level: drone.recentAlerts?.[0]?.level || "Medium",
     }))
 
   return (
@@ -112,9 +112,10 @@ export default function Dashboard() {
         <div className="border-b border-slate-800 bg-gradient-to-b from-slate-900/50 to-transparent p-6">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-3xl font-bold text-white mb-1">Fleet Readiness & Operations</h1>
+              <h1 className="text-3xl font-bold text-white mb-1">Drone Fleets & Readiness</h1>
               <p className="text-sm text-gray-400">
-                Consolidated readiness view across all assets, bases, and operational environments
+                Consolidated readiness view across MQ-9 Reaper, RQ-4 Global Hawk, MQ-1 Predator, XQ-58 Valkyrie, RQ-11
+                Raven Drones and support equipment
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -163,35 +164,30 @@ export default function Dashboard() {
 
         {/* Main Content Grid */}
         <div className="p-6 space-y-6">
-          {/* Top Row: Alerts and Fleet Map */}
-          <div className="grid grid-cols-2 gap-6">
-            {/* Recent Alerts */}
-            <div className="bg-slate-900/30 border border-slate-800 rounded-lg p-6">
-              <h2 className="text-lg font-bold text-white mb-4">Recent Alerts</h2>
-              <div className="space-y-3">
-                {recentAlerts.map((alert) => (
-                  <div key={alert.id} className="bg-slate-800/50 border border-slate-700 rounded-lg p-4">
-                    <div className="flex items-start justify-between mb-2">
-                      <div className="flex items-center gap-2">
-                        <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
-                        </svg>
-                        <span className="text-white font-semibold">
-                          {alert.assetId} • {alert.base}
-                        </span>
-                      </div>
-                      <span className="text-xs text-gray-400">1m ago</span>
-                    </div>
-                    <p className="text-sm text-gray-300 ml-7">
-                      {alert.level} • {alert.alert.substring(0, 45)}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <OperationalMap />
 
-            {/* Fleet Map */}
-            <FleetMap />
+          <div className="bg-slate-900/30 border border-slate-800 rounded-lg p-6">
+            <h2 className="text-lg font-bold text-white mb-4">Recent Alerts</h2>
+            <div className="space-y-3">
+              {recentAlerts.map((alert) => (
+                <div key={alert.id} className="bg-slate-800/50 border border-slate-700 rounded-lg p-4">
+                  <div className="flex items-start justify-between mb-2">
+                    <div className="flex items-center gap-2">
+                      <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                      </svg>
+                      <span className="text-white font-semibold">
+                        {alert.droneId} - {alert.base}
+                      </span>
+                    </div>
+                    <span className="text-xs text-gray-400">1m ago</span>
+                  </div>
+                  <p className="text-sm text-gray-300 ml-7">
+                    {alert.level} - {alert.alert.substring(0, 45)}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Middle Row: Fleet Charts */}
@@ -331,7 +327,7 @@ export default function Dashboard() {
               Support
             </a>
           </div>
-          <span>© 2025 Fleet Operations Center</span>
+          <span className="text-gray-500">(c) 2025 Fleet Operations Center</span>
         </div>
       </main>
     </div>

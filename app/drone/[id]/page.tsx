@@ -452,17 +452,12 @@ export default function DronePage() {
                     <div className="flex items-start justify-between">
                       <div>
                         <p className="text-sm font-semibold text-white">
-                          {log.date} • {log.duration}
+                          {log.date} - {log.duration}
                         </p>
                         <p className="text-xs text-gray-400 mt-1">{log.details}</p>
                       </div>
                       <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 19l-7-7m0 0l7-7m-7 7h16"
-                        />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19l-7-7 7-7" />
                       </svg>
                     </div>
                   </div>
@@ -474,7 +469,7 @@ export default function DronePage() {
             <div className="border border-slate-800 rounded-xl bg-slate-900/30 p-6">
               <h3 className="text-lg font-bold text-white mb-6">Predictive Insights</h3>
               <div className="space-y-4">
-                <div className="bg-slate-800/30 rounded-lg p-4 border border-slate-700">
+                <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700">
                   <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">Estimated Remaining Flight Life</p>
                   <p
                     className="text-2xl font-bold"
@@ -486,12 +481,12 @@ export default function DronePage() {
                   </p>
                 </div>
 
-                <div className="bg-slate-800/30 rounded-lg p-4 border border-slate-700">
+                <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700">
                   <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">Predicted Next Fault Type</p>
                   <p className="text-lg font-semibold text-white">{drone.predictiveInsights.predictedNextFaultType}</p>
                 </div>
 
-                <div className="bg-slate-800/30 rounded-lg p-4 border border-slate-700">
+                <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700">
                   <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">Confidence Score</p>
                   <p className="text-lg font-semibold text-white">{drone.predictiveInsights.confidenceScore}</p>
                 </div>
@@ -536,7 +531,7 @@ export default function DronePage() {
                 Support
               </a>
             </div>
-            <span>© 2025 Fleet Operations Center</span>
+            <span>(c) 2025 Fleet Operations Center</span>
           </div>
         </div>
       </main>
