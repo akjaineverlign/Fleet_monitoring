@@ -107,7 +107,7 @@ export function Sidebar({ currentPage }: SidebarProps) {
       {/* Logo */}
       <div className="p-6 border-b border-slate-800 flex items-center gap-3">
         <SignalIQLogoIcon />
-        <span className="text-white font-bold text-lg">SignalIQ</span>
+        <span className="text-white font-bold text-lg">Signal-IQ</span>
       </div>
 
       {/* Menu Items */}
@@ -133,7 +133,7 @@ export function Sidebar({ currentPage }: SidebarProps) {
 
       {/* Footer */}
       <div className="p-4 border-t border-slate-800 text-xs text-gray-500 space-y-2">
-        <p>SignalIQ v2.1.3</p>
+        <p>Signal-IQ v2.1.3</p>
         <a href="#" className="block text-blue-400 hover:text-blue-300">
           Support
         </a>

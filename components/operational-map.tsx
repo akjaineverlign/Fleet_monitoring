@@ -558,7 +558,7 @@ export function OperationalMap() {
       <div className="flex items-center justify-between mb-6">
         <div>
           <h2 className="text-2xl font-bold text-white">Global Naval Base Distribution</h2>
-          <p className="text-sm text-gray-400 mt-1">US Navy OPLOC (Operational Location) Asset Deployment</p>
+          <p className="text-sm text-gray-400 mt-1">US Navy OPLOC Asset Deployment</p>
         </div>
         <div className="flex items-center gap-2 px-3 py-1.5 bg-slate-800/50 border border-slate-700/50 rounded-lg">
           <div className="w-2 h-2 rounded-full bg-cyan-400/70 animate-pulse"></div>

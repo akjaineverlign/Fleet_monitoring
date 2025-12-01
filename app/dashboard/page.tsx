@@ -406,11 +406,11 @@ export default function Dashboard() {
 
   // Fleet status overview (fault types)
   const fleetStatusOverview = [
-    { label: "No Fault", count: 27, color: "#10b981" },
-    { label: "Motor1 Fault", count: 15, color: "#f97316" },
-    { label: "Motor2 Fault", count: 7, color: "#0ea5e9" },
-    { label: "GPS Fault", count: 8, color: "#a855f7" },
-    { label: "Propeller3 Fault", count: 12, color: "#f59e0b" },
+    { label: "No Fault", count: 11, color: "#10b981" },
+    { label: "Hydraulic pressure drift", count: 1, color: "#f97316" },
+    { label: "Electrical bus instability", count: 2, color: "#0ea5e9" },
+    { label: "Propulsion system vibration", count: 2, color: "#a855f7" },
+    { label: "Electrical grounding fault", count: 1, color: "#f59e0b" },
   ]
 
   // Top risk assets - Updated with correct data
@@ -698,7 +698,7 @@ export default function Dashboard() {
         {/* Footer */}
         <div className="border-t border-slate-800 bg-slate-900/30 p-4 flex items-center justify-between text-xs text-gray-500 mt-8">
           <div className="flex gap-8">
-            <span>SignalIQ v2.1.3</span>
+            <span>Signal-IQ v2.1.3</span>
             <a href="#" className="text-blue-400 hover:text-blue-300">
               Support
             </a>

@@ -421,7 +421,7 @@ export default function Home() {
         {/* Footer */}
         <div className="border-t border-slate-800 bg-slate-900/30 p-4 flex items-center justify-between text-xs text-gray-500 mt-8">
           <div className="flex gap-8">
-            <span>SignalIQ v2.1.3</span>
+            <span>Signal-IQ v2.1.3</span>
             <a href="#" className="text-blue-400 hover:text-blue-300">
               Support
             </a>
