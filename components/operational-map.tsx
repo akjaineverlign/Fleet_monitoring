@@ -569,19 +569,19 @@ export function OperationalMap() {
       {/* Statistics Row */}
       <div className="grid grid-cols-4 gap-4 mb-6">
         <div className="bg-slate-800/30 border border-slate-700/50 rounded-lg p-4">
-          <p className="text-xs text-gray-400 mb-2">Total Bases</p>
+          <p className="text-sm text-gray-400 mb-2">Total Bases</p>
           <p className="text-2xl font-bold text-white">{bases.length}</p>
         </div>
         <div className="bg-slate-800/30 border border-slate-700/50 rounded-lg p-4">
-          <p className="text-xs text-gray-400 mb-2">Total Assets</p>
+          <p className="text-sm text-gray-400 mb-2">Total Assets</p>
           <p className="text-2xl font-bold text-white">{totalAssets}</p>
         </div>
         <div className="bg-slate-800/30 border border-slate-700/50 rounded-lg p-4">
-          <p className="text-xs text-gray-400 mb-2">Average Deployment</p>
+          <p className="text-sm text-gray-400 mb-2">Average Deployment</p>
           <p className="text-2xl font-bold text-white">{avgAssetCount}</p>
         </div>
         <div className="bg-slate-800/30 border border-slate-700/50 rounded-lg p-4">
-          <p className="text-xs text-gray-400 mb-2">Max Capacity</p>
+          <p className="text-sm text-gray-400 mb-2">Max Capacity</p>
           <p className="text-2xl font-bold text-white">{maxAssetCount}</p>
         </div>
       </div>

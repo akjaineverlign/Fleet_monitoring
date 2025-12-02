@@ -139,7 +139,7 @@ export function AssetCard({ id, name, status, color, assetType }: AssetCardProps
       </div>
 
       {/* Asset ID */}
-      <p className="text-xs text-gray-500 mb-4">{id}</p>
+      <p className="text-sm text-gray-500 mb-4">{id}</p>
 
       {/* Illustration */}
       <div className="flex justify-center mb-4">

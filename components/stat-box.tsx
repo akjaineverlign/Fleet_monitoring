@@ -29,7 +29,7 @@ export function StatBox({
 
   return (
     <div className={`border border-slate-700/50 rounded-xl p-5 ${actualBgColor} backdrop-blur-sm`}>
-      <p className="text-xs text-gray-400 mb-3">{label}</p>
+      <p className="text-sm text-gray-400 mb-3">{label}</p>
       <div className="flex items-center justify-between">
         <div className="flex flex-col">
           <h3 className="text-3xl font-bold text-white">{value}</h3>

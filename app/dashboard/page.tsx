@@ -890,7 +890,7 @@ export default function Dashboard() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-3xl font-bold text-white mb-1">Assets Readiness</h1>
-              <p className="text-sm text-gray-400">
+              <p className="text-base text-gray-400">
                 Consolidated readiness view across all assets, bases, and operational environments
               </p>
             </div>
@@ -932,7 +932,7 @@ export default function Dashboard() {
               key={idx}
               className="bg-slate-900/50 border border-slate-800 rounded-lg p-4 hover:border-slate-700 transition-colors"
             >
-              <p className="text-xs text-gray-400 mb-2">{metric.label}</p>
+              <p className="text-sm text-gray-400 mb-2">{metric.label}</p>
               <p className="text-3xl font-bold text-white">{metric.value}</p>
             </div>
           ))}
@@ -955,7 +955,7 @@ export default function Dashboard() {
                   <div key={item.name} className="flex items-center justify-between gap-2">
                     <div className="flex items-center gap-2">
                       <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: item.fill }}></div>
-                      <span className="text-xs text-gray-300">{item.name}</span>
+                      <span className="text-sm text-gray-300">{item.name}</span>
                     </div>
                     <span className="text-sm font-semibold text-white">{item.value}</span>
                   </div>
@@ -968,8 +968,8 @@ export default function Dashboard() {
                   <PieChart>
                     <Pie
                       data={fleetReadinessData}
-                      innerRadius={40}
-                      outerRadius={70}
+                      innerRadius={50}
+                      outerRadius={90}
                       dataKey="value"
                       startAngle={90}
                       endAngle={-270}
@@ -991,7 +991,7 @@ export default function Dashboard() {
                   <div key={idx} className="flex items-center justify-between">
                     <div className="flex items-center gap-3 flex-1 min-w-0">
                       <div className="w-3 h-3 rounded-full flex-shrink-0" style={{ backgroundColor: item.color }}></div>
-                      <span className="text-xs text-gray-300 truncate">{item.label}</span>
+                      <span className="text-sm text-gray-300 truncate">{item.label}</span>
                     </div>
                     <span className="text-lg font-semibold text-white ml-2 flex-shrink-0">{item.count}</span>
                   </div>
@@ -1011,10 +1011,10 @@ export default function Dashboard() {
                           <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" />
                         </svg>
                         <div className="flex-1 min-w-0">
-                          <p className="text-xs text-gray-300 font-semibold truncate">
+                          <p className="text-sm text-gray-300 font-semibold truncate">
                             {alert.assetId} - {alert.base}
                           </p>
-                          <p className="text-xs text-gray-400 mt-0.5 line-clamp-2">
+                          <p className="text-sm text-gray-400 mt-0.5 line-clamp-2">
                             {alert.alert}
                           </p>
                         </div>
