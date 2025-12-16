@@ -736,6 +736,7 @@ import { useState, useEffect } from "react"
 import { Sidebar } from "@/components/sidebar"
 import { ResponsiveContainer, PieChart, Pie, Cell } from "recharts"
 import { OperationalMap } from "@/components/operational-map"
+import { ProtectedRoute } from "@/components/protected-route"
 
 interface Asset {
   id: string
@@ -767,7 +768,11 @@ export default function Dashboard() {
   }, [])
 
   if (loading) {
-    return <div className="flex items-center justify-center h-screen">Loading...</div>
+    return (
+      <ProtectedRoute>
+        <div className="flex items-center justify-center h-screen">Loading...</div>
+      </ProtectedRoute>
+    )
   }
 
   // Calculate metrics
@@ -881,8 +886,9 @@ export default function Dashboard() {
     }))
 
   return (
-    <div className="flex h-screen bg-slate-950">
-      <Sidebar currentPage="Dashboard" />
+    <ProtectedRoute>
+      <div className="flex h-screen bg-slate-950">
+        <Sidebar currentPage="Dashboard" />
 
       <main className="flex-1 overflow-auto bg-slate-950">
         {/* Header Section */}
@@ -1106,5 +1112,6 @@ export default function Dashboard() {
         </div>
       </main>
     </div>
+    </ProtectedRoute>
   )
 }

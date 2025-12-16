@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { Sidebar } from "@/components/sidebar"
 import { DroneIllustration } from "@/components/drone-illustration"
+import { ProtectedRoute } from "@/components/protected-route"
 import {
   LineChart,
   Line,
@@ -93,11 +94,19 @@ export default function DronePage() {
   }, [droneId])
 
   if (loading) {
-    return <div className="flex items-center justify-center h-screen">Loading...</div>
+    return (
+      <ProtectedRoute>
+        <div className="flex items-center justify-center h-screen">Loading...</div>
+      </ProtectedRoute>
+    )
   }
 
   if (!drone) {
-    return <div className="flex items-center justify-center h-screen">Drone not found</div>
+    return (
+      <ProtectedRoute>
+        <div className="flex items-center justify-center h-screen">Drone not found</div>
+      </ProtectedRoute>
+    )
   }
 
   const statusColorMap: Record<string, { main: string; bg: string; text: string }> = {
@@ -137,8 +146,9 @@ export default function DronePage() {
   }
 
   return (
-    <div className="flex h-screen bg-slate-950">
-      <Sidebar />
+    <ProtectedRoute>
+      <div className="flex h-screen bg-slate-950">
+        <Sidebar />
 
       <main className="flex-1 overflow-auto bg-slate-950">
         {/* Header with Status */}
@@ -536,5 +546,6 @@ export default function DronePage() {
         </div>
       </main>
     </div>
+    </ProtectedRoute>
   )
 }

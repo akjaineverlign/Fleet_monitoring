@@ -27,7 +27,7 @@ const menuItems: MenuItem[] = [
   },
   {
     label: "Fleet Status",
-    href: "/",
+    href: "/fleet-status",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -89,11 +89,11 @@ export function Sidebar({ currentPage }: SidebarProps) {
 
   const getActiveItem = () => {
     if (pathname === "/dashboard") return "Dashboard"
-    if (pathname === "/") return "Fleet Status"
+    if (pathname === "/fleet-status") return "Fleet Status"
     if (pathname === "/maintenance") return "Maintenance Logs"
     if (pathname === "/reports") return "Reports"
     if (pathname === "/settings") return "Settings"
-    return "Fleet Status"
+    return "Dashboard"
   }
 
   const activeItem = getActiveItem()
