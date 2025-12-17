@@ -267,7 +267,7 @@ const handleLogin = async () => {
 
           {showLogin && (
             <div className="flex flex-col gap-3 mt-2 w-[90%] sm:w-[360px] items-center">
-              <h3 className="text-2xl text-center mb-1 font-semibold">
+              <h3 className="text-black text-2xl text-center mb-1 font-semibold">
                 Let&apos;s get started
               </h3>
               <p className="text-sm text-black/70 text-center mb-1.5">
