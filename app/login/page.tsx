@@ -32,4 +32,3 @@ export default function LoginPage() {
   // For authenticated users, they'll be redirected to dashboard
   return <SplashLogin />;
 }
-

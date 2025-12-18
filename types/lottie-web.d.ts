@@ -36,4 +36,3 @@ declare module "lottie-web" {
 
   export default lottie;
 }
-

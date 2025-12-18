@@ -69,4 +69,3 @@ export const getAccessToken = (): string | null => {
 export const isAuthenticated = (): boolean => {
   return getAccessToken() !== null;
 };
-
