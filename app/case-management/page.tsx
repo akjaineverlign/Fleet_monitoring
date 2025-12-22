@@ -4,25 +4,12 @@ import { useState, useEffect } from "react"
 import { Sidebar } from "@/components/sidebar"
 import { ProtectedRoute } from "@/components/protected-route"
 import { useRouter } from "next/navigation"
-
-interface Case {
-  caseId: string
-  assetId: string
-  assetName: string
-  component: string
-  failureMode: string
-  severity: "CRITICAL" | "HIGH" | "MED" | "LOW"
-  base: string
-  riskScore: number
-  status: "UNDER REVIEW" | "IN PROGRESS" | "CLOSED"
-  timeAgo: string
-  dateReported: string
-}
+import { generateCasesFromAssets } from "@/lib/case-utils"
 
 function CaseManagementPage() {
-  const [cases, setCases] = useState<Case[]>([])
-  const [selectedCase, setSelectedCase] = useState<Case | null>(null)
-  const [filterTab, setFilterTab] = useState<"critical" | "warning" | "all">("all")
+  const [cases, setCases] = useState([])
+  const [selectedCase, setSelectedCase] = useState(null)
+  const [filterTab, setFilterTab] = useState("all")
   const [searchQuery, setSearchQuery] = useState("")
   const [loading, setLoading] = useState(true)
   const router = useRouter()
@@ -31,55 +18,8 @@ function CaseManagementPage() {
     fetch("/assets-data.json")
       .then((res) => res.json())
       .then((data) => {
-        const generatedCases: Case[] = []
-
-        data.assets.forEach((asset: any) => {
-          if (asset.maintenanceHistory && asset.maintenanceHistory.length > 0) {
-            asset.maintenanceHistory.forEach((history: any) => {
-              const timeAgo = calculateTimeAgo(history.dateReported)
-              const severity = mapRiskToSeverity(history.riskScore)
-
-              generatedCases.push({
-                caseId: history.caseId || `${asset.id.substring(0, 3)}001-000${generatedCases.length + 1}`,
-                assetId: asset.id,
-                assetName: asset.name,
-                component: history.component,
-                failureMode: history.failureMode,
-                severity: severity,
-                base: asset.assetOverview.base,
-                riskScore: calculateRiskScore(severity),
-                status: history.status === "Closed" ? "CLOSED" : "UNDER REVIEW",
-                timeAgo: timeAgo,
-                dateReported: history.dateReported,
-              })
-            })
-          }
-        })
-
-        // Add recent alerts as cases
-        data.assets.forEach((asset: any) => {
-          if (asset.recentAlerts && asset.recentAlerts.length > 0) {
-            asset.recentAlerts.forEach((alert: any, idx: number) => {
-              const severity =
-                alert.level === "High Priority" ? "CRITICAL" : alert.level === "Medium Priority" ? "HIGH" : "MED"
-              generatedCases.push({
-                caseId: `${asset.id.substring(0, 3)}001-${String(generatedCases.length + 1).padStart(4, "0")}`,
-                assetId: asset.id,
-                assetName: asset.name,
-                component: extractComponent(alert.message),
-                failureMode: alert.message,
-                severity: severity,
-                base: asset.assetOverview.base,
-                riskScore: calculateRiskScore(severity),
-                status: "UNDER REVIEW",
-                timeAgo: "2 min ago",
-                dateReported: new Date().toISOString().split("T")[0],
-              })
-            })
-          }
-        })
-
-        setCases(generatedCases.sort((a, b) => b.riskScore - a.riskScore))
+        const generatedCases = generateCasesFromAssets(data.assets)
+        setCases(generatedCases)
         if (generatedCases.length > 0) {
           setSelectedCase(generatedCases[0])
         }
@@ -87,42 +27,6 @@ function CaseManagementPage() {
       })
       .catch(() => setLoading(false))
   }, [])
-
-  const calculateTimeAgo = (dateReported: string) => {
-    const date = new Date(dateReported)
-    const now = new Date()
-    const diffTime = Math.abs(now.getTime() - date.getTime())
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
-
-    if (diffDays < 1) return "2 min ago"
-    if (diffDays === 1) return "1 day ago"
-    if (diffDays < 7) return `${diffDays} days ago`
-    if (diffDays < 30) return `${Math.floor(diffDays / 7)} weeks ago`
-    return `${Math.floor(diffDays / 30)} months ago`
-  }
-
-  const mapRiskToSeverity = (riskScore: string): "CRITICAL" | "HIGH" | "MED" | "LOW" => {
-    if (riskScore === "High") return "CRITICAL"
-    if (riskScore === "Critical") return "CRITICAL"
-    if (riskScore === "Medium") return "HIGH"
-    return "MED"
-  }
-
-  const calculateRiskScore = (severity: string): number => {
-    if (severity === "CRITICAL") return Math.floor(Math.random() * 10) + 90
-    if (severity === "HIGH") return Math.floor(Math.random() * 20) + 70
-    if (severity === "MED") return Math.floor(Math.random() * 20) + 50
-    return Math.floor(Math.random() * 30) + 20
-  }
-
-  const extractComponent = (message: string): string => {
-    if (message.toLowerCase().includes("motor")) return "Motor / Drive Unit"
-    if (message.toLowerCase().includes("propuls")) return "Propulsion System"
-    if (message.toLowerCase().includes("gps")) return "GPS Module"
-    if (message.toLowerCase().includes("hydraulic")) return "Hydraulic System"
-    if (message.toLowerCase().includes("hull")) return "Hull Structure"
-    return "System Component"
-  }
 
   const filteredCases = cases.filter((c) => {
     const matchesSearch =
