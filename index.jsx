@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import lottie from "lottie-web";
 import LogoSvg from "assets/img/auth/Contract-IQ.svg";
-import LogoAnimationData from "assets/img/auth/logo_animation.json";
+import LogoAnimationData from "assets/img/auth/logo_animation1.json";
 import { login } from "api/auth";
 
 function GetStarted() {

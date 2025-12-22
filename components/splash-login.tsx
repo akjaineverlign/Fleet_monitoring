@@ -25,7 +25,7 @@ export function SplashLogin() {
     // Load animation
     const loadAnimation = async () => {
       try {
-        const animationData = await fetch("/logo_animation.json").then((res) =>
+        const animationData = await fetch("/logo_animation1.json").then((res) =>
           res.json()
         );
 
